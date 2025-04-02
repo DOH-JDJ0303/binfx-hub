@@ -20,60 +20,64 @@ editor: visual
 
 This activity will focus on a surveillance cluster of *Acinetobacter baumannii* from 2018-2024. This Microreact file was generated using [BigBacter](https://github.com/DOH-JDJ0303/bigbacter-nf) - a genomic surveillance tool that performs core SNP analyses and phylogenetic analysis.
 
-# Set up (5 minutes)
+# 1. Set up (5 minutes)
 
-1.  **Download the initial Microreact file:**
+**1.1. Download the initial Microreact file:**
 
-    Right-click this [link](https://raw.githubusercontent.com/DOH-JDJ0303/binfx-hub/refs/heads/main/docs/presentations/2025/APHL_AMD_Days/tool_selection/amd_academy_tool_selection_ex1.html) and save the file to your computer. The file should be called `file_name.microreact`.
+Right-click this [link](https://raw.githubusercontent.com/DOH-JDJ0303/binfx-hub/refs/heads/main/docs/presentations/2025/APHL_AMD_Days/microreact/AMD_Academy.Acinetobacter_baumannii.microreact) and save the file to your computer. The file should be called `AMD_Academy.Acinetobacter_baumannii.microreact`.
 
-2.  **Navigate to the Microreact webpage:**
+**1.2. Navigate to the Microreact webpage:**
 
-    <https://microreact.org/upload>
+<https://microreact.org/upload>
 
-3.  **Import the Microreact file:**
+**1.3. Import the Microreact file:**
 
-    Import the file downloaded in step 1 into Microreact.This can be accomplished by dragging the file into the browser or by clicking the large "plus" button on the lower right-hand corner of the Microreact webpage.
+Import the file downloaded in step 1.1 into Microreact by dragging the file into the browser.
 
 ::: callout-note
 The Microreact file should include three panels: a phylogenetic tree, a SNP matrix, and a metadata table.
 :::
 
-# Exploring Microreact functionality (10 minutes)
+# 2. Exploring Microreact functionality (10 minutes)
 
-Take some time to explore the ways you can change the visualizations in Microreact and the data included in this file. There are many ways to explore the data and change the visualizations. If you are unfamiliar with Microreact, we suggest starting with the “Eye” Icon to change the labels, colors, and shapes. You can also select certain samples, zoom in on parts of the tree, or otherwise explore the functionality.
+Take some time to explore the ways you can change the visualizations in Microreact and the data included in this file. If you are unfamiliar with Microreact, we suggest starting with the `Eye icon 👁` to change the labels, colors, and shapes. You can also select specific samples or zoom in on parts of the tree!
 
-# Updating the metadata (5 minutes)
+::: callout-tip
+Make sure the `Color Column` is set to `PARTITION`. This will be important for a future step and can be changed using the `Eye icon 👁` in the upper right-hand corner of Microreact page.
+:::
 
-The initial Microreact file included a phylogenetic tree, SNP matrix, and some sample metadata; however, this sample metadata is incomplete. The next steps will walk you through importing a new metadata file that contains some additional sample information. This information will be used during a later activity.
+# 3. Updating the metadata (5 minutes)
 
-1.  **Download the new metadata file:**
+The initial Microreact file included a phylogenetic tree, SNP matrix, and some sample metadata; however, this metadata is incomplete! The next steps will walk you through importing a new metadata file that contains additional sample information. This information will be used during a later activity.
 
-    Right-click this [link](https://raw.githubusercontent.com/DOH-JDJ0303/binfx-hub/refs/heads/main/docs/presentations/2025/APHL_AMD_Days/tool_selection/amd_academy_tool_selection_ex1.html) and save the file to your computer. The file should be called `file_name.csv`.
+**3.1. Download the new metadata file:**
 
-2.  **Import the new metadata file into Microreact:**
+Right-click this [link](https://raw.githubusercontent.com/DOH-JDJ0303/binfx-hub/refs/heads/main/docs/presentations/2025/APHL_AMD_Days/microreact/metadata.withtime.csv) and save the file to your computer. The file should be called `metadata.withtime.csv`.
 
-    a.  Click the “pencil” icon in the top right corner and select “Edit Existing Panels”.
+**3.2. Import the new metadata file into Microreact:**
 
-    b.  Select the `Metadata` panel to edit.
+a.  Click the `Pencil icon ✏️` in the top right corner and select `Edit Existing Panels`.
 
-    c.  Click the `file icon 📄` in the `Data File` field to upload the file downloaded in step 1.
+b.  Select the `Metadata` panel to edit.
+
+c.  Click the `File icon 📄` in the `Data File` field to upload the file downloaded in `step 1.1`.
 
 ::: callout-note
 You should now see three new columns: `YEAR`, `MONTH`, and `DAY`.
 :::
 
-# Exploring the data (15 minutes)
+# 4. Exploring the data (15 minutes)
 
-The phylogenetic tree in the initial Microreact file was colored by `partitions`. BigBacter creates these partitions by estimating the pairwise nucleotide differences between samples based on the branch lengths in the tree.
+The tips of the phylogenetic tree should be colored by *partition* (see below for how to change this, if needed!). BigBacter creates these partitions using the pairwise nucleotide differences estimated from the tree branch lengths. This can be very helpful for identifying closely related isolates!
 
 ::: callout-note
 Make sure the `Color Column` is set to `PARTITION`. This can be changed using the `Eye icon 👁️`in the upper right-hand corner of Microreact page.
 :::
 
 ::: {.callout-tip icon="false"}
-## Questions
+## Questions - Group Discussion
 
-**Q1. Each parition includes samples that are within \~100 nucleotides of each other.**
+**Q4.1. Each partition includes samples that are within \~100 nucleotides.**
 
 a.  How many partitions only include 1 sample?
 
@@ -81,15 +85,15 @@ a.  How many partitions only include 1 sample?
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 ```
 
-b.  What does this mean for those samples? 
+b.  What does this mean for those samples?
 
 ```{=html}
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 ```
 
-**Q2. Let’s explore the data in a single partition. Filter the metadata table to view only samples in Partition 8.**
+**Q4.2. Let’s explore the data in a single partition. Filter the metadata table to view only samples in Partition 8.**
 
-a.  What sequence types (`MLST_*` columns) are included in this particular partition?
+a.  What sequence types (`MLST_1` column) are included in this particular partition?
 
 ```{=html}
 <textarea rows="5" cols="85" placeholder="...."></textarea>
@@ -100,127 +104,149 @@ b.  Using the “Show Values” toggle under Labels in the SNP matrix, what is t
 ```{=html}
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 ```
+:::
 
-**Q3. Remove the filter for Partition 8 to view the full dataset. Change the Coulor Column to “MLST_1”. Think about the differences between grouping the samples by partition and by MLST. Which do you find to be the most useful for identifying potential clusters?**
+::: {.callout-caution icon="false"}
+## Questions - Class Discussion
+
+**Q4.3. Remove the filter for Partition 8 to view the full dataset. Change the `Colour Column` to “MLST_1”. Think about the differences between grouping the samples by partition and by MLST. Which do you find to be the most useful for identifying potential clusters?**
 
 ```{=html}
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 ```
 :::
 
-# Add in metadata blocks (15 minutes)
+# 5. Add in metadata blocks (15 minutes)
 
-**INSERT BACKGROUND / INFO ABOUT WHY THIS IS RELEVANT**
+Metadata blocks provide a way to overlay metadata onto a phylogenetic tree. This can be particularly useful when looking for patterns that may correlate with microbial evolution, such as disease transmission and antimicrobial resistance. In this example, we will be exploring the use of metadata blocks to visualize patterns in antimicrobial resistance genes determine using the [CDC PHoeNIx pipeline](https://github.com/CDCgov/phoenix).
 
-1.  **Add AMR genes to tree:**
+**5.1. Add AMR genes to the tree:**
 
-    Add metadata blocks for each antibiotic resistance gene using the `Metadata blocks` drop down menu in the `Tree` panel.
+Add metadata blocks for each antibiotic resistance gene using the `Metadata blocks` drop down menu in the `Tree` panel.
 
-2.  **Inspect the AMR genes:**
+**5.2. Inspect the AMR genes:**
 
-    View the legend to interpret the colors in the metadata blocks.
+View the legend to interpret the colors in the metadata blocks.
 
-3.  **Change the metadata block colors (optional)**
+**5.3. Change the metadata block colors (optional):**
 
-    You can change the color of the metadata blocks by selecting the `Pencil icon ✏️` and select `Edit Existing Panels`. Colors can be adjusted in the `Metadata` table. Select the `Reuse` option if you want all color schemes to match.
+You can change the color of the metadata blocks by selecting the `Pencil icon ✏️` and then `Edit Existing Panels`. Colors can be adjusted in the `Metadata` table. Select the `Reuse` option if you want all color schemes to match.
 
 ::: {.callout-tip icon="false"}
-## Questions
+## Questions - Group Discussion
 
-**Q1. What resistance genes are common? Which are uncommon?**
-
-```{=html}
-<textarea rows="5" cols="85" placeholder="...."></textarea>
-```
-
-**Q2. Reviewing the resistant gene data, are there any partitions or clusters of particular concern?**
+**Q5.1. What resistance genes are common? Which are uncommon?**
 
 ```{=html}
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 ```
 :::
 
-# **Create a timeline (15 minutes)**
+::: {.callout-caution icon="false"}
+## Questions - Class Discussion
 
-INSERT BACKGROUND
+**Q5.2. Reviewing the resistant gene data, are there any partitions or clusters of particular concern?**
+
+```{=html}
+<textarea rows="5" cols="85" placeholder="...."></textarea>
+```
+:::
+
+
+# 6. Create a timeline (15 minutes)
+
+It is often necessary to consider when two or more isolates were collected to determine if their genomic relationships support an epi link. While you could do this using one or more metadata blocks, Microreact provides the option to create a `Timeline`, which is specifically designed to interpret longitudinal data.
 
 ::: callout-note
 This section requires the `YEAR`, `MONTH`, and `DAY` columns added in the `Updating the metadata` section of this activity.
 :::
 
-1.  **Creating a new panel:**
+**6.1. Creating a new panel:**
 
-    a.  Click on the `Pencil icon ✏️` in the upper right-hand corner of the screen and select `Create new Timeline`.
-    b.  Use your cursor to select location for your new Timeline panel.
-    c.  Add the `YEAR`, `MONTH`, `DAY` columns to the timeline.
+a.  Click on the `Pencil icon ✏️` in the upper right-hand corner of the screen and select `Create new Timeline`.
+b.  Use your cursor to select the location for your new Timeline panel.
+c.  Add the `YEAR`, `MONTH`, `DAY` columns to the timeline.
 
-2.  **Run the timeline:**
+**6.2. Run the timeline:**
 
-    a.  Click the `Play button ▶️` to start the timeline. Samples will appear based on their collection dates.
+Click the `Play button ▶️` to start the timeline. Samples will appear based on their collection dates.
 
-::: {.callout-tip icon="false"}
-## Questions
+::: {.callout-caution icon="false"}
+## Questions - Class Discussion
 
-**Q1. Was running the timeline helpful to understand the samples over time? What additional insights were gained by viewing and running the timeline? **
+**Q6.1. Was running the timeline helpful for understand the samples over time? What additional insights were gained by viewing and running the timeline?**
 
 ```{=html}
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 ```
 :::
 
-# **Investigate the recent samples (15 minutes?)**
+# 7. Investigate the recent samples (15 minutes?)
 
-1.  Annotate the _new_ samples:
+There are two samples that have recently been sequenced and added to the analysis. These samples are denoted as `NEW` in the `STAUS` column of the metadata table. Color the tree nodes by `STATUS` to visualize these samples on the tree.
 
-    There are two samples that have recently been sequenced and added to the analysis. Color the tree nodes by `STATUS` to visualize these two samples on the tree.
-    
 ::: {.callout-tip icon="false"}
-## Questions
+## Questions - Group Discussion
 
-**Q1. Are these two samples related?**
-
-```{=html}
-<textarea rows="5" cols="85" placeholder="...."></textarea>
-```
-
-**Q2. Looking at the timeline, were there samples collected within a similar time frame?**
+**Q7.1. Are these two samples genomically related?**
 
 ```{=html}
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 ```
 
-**Q3. Zoom in on each of the new samples. What are the SNP differences between the new isolates and the other isolates closely related to each of these?**
+**Q7.2. Looking at the timeline, were there samples collected within a similar time frame to each new sample?**
+
 ```{=html}
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 ```
 
-**Q4. How would you interpret these and communicate with infection prevention teams or local epidemiologists?**
+**Q7.3. Zoom in on each of the new samples. What are the SNP differences between the new isolates and the other isolates closely related to each of these?**
+
 ```{=html}
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 ```
 :::
 
-# **Saving and exporting the data (10 minutes)**
+::: {.callout-caution icon="false"}
+## Questions - Class Discussion
 
-1.  Download the tree and metadata file:
-
-    insert description
-
-2.  Import the tree file into Auspice:
-
-    insert description
-
-3.  Import the metadata file into Auspice:
-
-    insert description
-    
-::: {.callout-tip icon="false"}
-## Questions
-
-**Q1. What are the pros and cons of each visualization tool?**
+**Q7.4. How would you interpret these new samples and communicate with infection prevention teams or local epidemiologists?**
 
 ```{=html}
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 ```
+:::
 
+# 8. Saving and exporting the data (10 minutes)
+
+In this final section, we will explore how to export Microreact projects, along with indivual files for downstream applications.
+
+**8.1. Save the updated Microreact file:**
+
+a.  Clicking the `Save Project` button at the top-right corner of the page. 
+b.  Rename your file and save using the `Download as .microreact file`. 
+c.  This new file can be viewed in the same way you viewed the initial Microreact file at the start of the activity!
+
+**8.2. Download the tree and metadata file:**
+
+Download the metadata file and tree file by clicking on the `Download Project Files` button at the top-right corner of the page.
+
+**8.3. Import the tree and metadata into Auspice:**
+
+a.  Navigate to https://auspice.us/
+b.  Drag-and-drop the tree file.
+c.  Drag-and-drop the metadata file.
+
+**8.4. Explore Auspice**
+
+Take some time to explore Auspice. A good place to start is adjusting the value in the `Color By` field.
+
+::: {.callout-caution icon="false"}
+## Questions - Class Discussion
+
+**Q8.1. What are the pros and cons of each visualization tool?**
+
+```{=html}
+<textarea rows="5" cols="85" placeholder="...."></textarea>
+```
 :::

@@ -3101,12 +3101,12 @@ vertical-align: -.125em;
 </section>
 <section id="set-up-5-minutes" class="level1">
 <h1>1. Set up (5 minutes)</h1>
-<p>1.1. <strong>Download the initial Microreact file:</strong></p>
+<p><strong>1.1. Download the initial Microreact file:</strong></p>
 <p>Right-click this <a href="https://raw.githubusercontent.com/DOH-JDJ0303/binfx-hub/refs/heads/main/docs/presentations/2025/APHL_AMD_Days/microreact/AMD_Academy.Acinetobacter_baumannii.microreact">link</a> and save the file to your computer. The file should be called <code>AMD_Academy.Acinetobacter_baumannii.microreact</code>.</p>
-<p>1.2. <strong>Navigate to the Microreact webpage:</strong></p>
+<p><strong>1.2. Navigate to the Microreact webpage:</strong></p>
 <p><a href="https://microreact.org/upload" class="uri">https://microreact.org/upload</a></p>
-<p>1.3. <strong>Import the Microreact file:</strong></p>
-<p>Import the file downloaded in step 1.1 into Microreact.This can be accomplished by dragging the file into the browser or by clicking the large <code>Plus button ➕</code> on the lower right-hand corner of the Microreact webpage.</p>
+<p><strong>1.3. Import the Microreact file:</strong></p>
+<p>Import the file downloaded in step 1.1 into Microreact by dragging the file into the browser.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -3123,16 +3123,29 @@ Note
 </section>
 <section id="exploring-microreact-functionality-10-minutes" class="level1">
 <h1>2. Exploring Microreact functionality (10 minutes)</h1>
-<p>Take some time to explore the ways you can change the visualizations in Microreact and the data included in this file. There are many ways to explore the data and change the visualizations. If you are unfamiliar with Microreact, we suggest starting with the “Eye” Icon to change the labels, colors, and shapes. You can also select certain samples, zoom in on parts of the tree, or otherwise explore the functionality.</p>
+<p>Take some time to explore the ways you can change the visualizations in Microreact and the data included in this file. If you are unfamiliar with Microreact, we suggest starting with the <code>Eye icon 👁</code> to change the labels, colors, and shapes. You can also select specific samples or zoom in on parts of the tree!</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Make sure the <code>Color Column</code> is set to <code>PARTITION</code>. This will be important for a future step and can be changed using the <code>Eye icon 👁</code> in the upper right-hand corner of Microreact page.</p>
+</div>
+</div>
 </section>
 <section id="updating-the-metadata-5-minutes" class="level1">
 <h1>3. Updating the metadata (5 minutes)</h1>
-<p>The initial Microreact file included a phylogenetic tree, SNP matrix, and some sample metadata; however, this sample metadata is incomplete. The next steps will walk you through importing a new metadata file that contains some additional sample information. This information will be used during a later activity.</p>
-<p>3.1. <strong>Download the new metadata file:</strong></p>
+<p>The initial Microreact file included a phylogenetic tree, SNP matrix, and some sample metadata; however, this metadata is incomplete! The next steps will walk you through importing a new metadata file that contains additional sample information. This information will be used during a later activity.</p>
+<p><strong>3.1. Download the new metadata file:</strong></p>
 <p>Right-click this <a href="https://raw.githubusercontent.com/DOH-JDJ0303/binfx-hub/refs/heads/main/docs/presentations/2025/APHL_AMD_Days/microreact/metadata.withtime.csv">link</a> and save the file to your computer. The file should be called <code>metadata.withtime.csv</code>.</p>
-<p>3.2. <strong>Import the new metadata file into Microreact:</strong></p>
+<p><strong>3.2. Import the new metadata file into Microreact:</strong></p>
 <ol type="a">
-<li><p>Click the <code>Pencil icon ✏️</code> icon in the top right corner and select <code>Edit Existing Panels</code>.</p></li>
+<li><p>Click the <code>Pencil icon ✏️</code> in the top right corner and select <code>Edit Existing Panels</code>.</p></li>
 <li><p>Select the <code>Metadata</code> panel to edit.</p></li>
 <li><p>Click the <code>File icon 📄</code> in the <code>Data File</code> field to upload the file downloaded in <code>step 1.1</code>.</p></li>
 </ol>
@@ -3152,7 +3165,7 @@ Note
 </section>
 <section id="exploring-the-data-15-minutes" class="level1">
 <h1>4. Exploring the data (15 minutes)</h1>
-<p>The phylogenetic tree in the initial Microreact file was colored by <code>partitions</code>. BigBacter creates these partitions by estimating the pairwise nucleotide differences between samples based on the branch lengths in the tree.</p>
+<p>The tips of the phylogenetic tree should be colored by <em>partition</em> (see below for how to change this, if needed!). BigBacter creates these partitions using the pairwise nucleotide differences estimated from the tree branch lengths. This can be very helpful for identifying closely related isolates!</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -3172,62 +3185,86 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Questions
+Questions - Group Discussion
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Q4.1. Each parition includes samples that are within ~100 nucleotides of each other.</strong></p>
+<p><strong>Q4.1. Each partition includes samples that are within ~100 nucleotides.</strong></p>
 <ol type="a">
 <li>How many partitions only include 1 sample?</li>
 </ol>
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 <ol start="2" type="a">
-<li>What does this mean for those samples? </li>
+<li>What does this mean for those samples?</li>
 </ol>
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 <p><strong>Q4.2. Let’s explore the data in a single partition. Filter the metadata table to view only samples in Partition 8.</strong></p>
 <ol type="a">
-<li>What sequence types (<code>MLST_*</code> columns) are included in this particular partition?</li>
+<li>What sequence types (<code>MLST_1</code> column) are included in this particular partition?</li>
 </ol>
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 <ol start="2" type="a">
 <li>Using the “Show Values” toggle under Labels in the SNP matrix, what is the SNP range within Partition 8?</li>
 </ol>
 <textarea rows="5" cols="85" placeholder="...."></textarea>
-<p><strong>Q4.3. Remove the filter for Partition 8 to view the full dataset. Change the Coulor Column to “MLST_1”. Think about the differences between grouping the samples by partition and by MLST. Which do you find to be the most useful for identifying potential clusters?</strong></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions - Class Discussion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Q4.3. Remove the filter for Partition 8 to view the full dataset. Change the <code>Colour Column</code> to “MLST_1”. Think about the differences between grouping the samples by partition and by MLST. Which do you find to be the most useful for identifying potential clusters?</strong></p>
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 </div>
 </div>
 </section>
 <section id="add-in-metadata-blocks-15-minutes" class="level1">
 <h1>5. Add in metadata blocks (15 minutes)</h1>
-<p><strong>INSERT BACKGROUND / INFO ABOUT WHY THIS IS RELEVANT</strong></p>
-<p>5.1. <strong>Add AMR genes to tree:</strong></p>
-<pre><code>Add metadata blocks for each antibiotic resistance gene using the `Metadata blocks` drop down menu in the `Tree` panel.</code></pre>
-<p>5.2. <strong>Inspect the AMR genes:</strong></p>
-<pre><code>View the legend to interpret the colors in the metadata blocks.</code></pre>
-<p>5.3. <strong>Change the metadata block colors (optional)</strong></p>
-<pre><code>You can change the color of the metadata blocks by selecting the `Pencil icon ✏️` and select `Edit Existing Panels`. Colors can be adjusted in the `Metadata` table. Select the `Reuse` option if you want all color schemes to match.</code></pre>
+<p>Metadata blocks provide a way to overlay metadata onto a phylogenetic tree. This can be particularly useful when looking for patterns that may correlate with microbial evolution, such as disease transmission and antimicrobial resistance. In this example, we will be exploring the use of metadata blocks to visualize patterns in antimicrobial resistance genes determine using the <a href="https://github.com/CDCgov/phoenix">CDC PHoeNIx pipeline</a>.</p>
+<p><strong>5.1. Add AMR genes to the tree:</strong></p>
+<p>Add metadata blocks for each antibiotic resistance gene using the <code>Metadata blocks</code> drop down menu in the <code>Tree</code> panel.</p>
+<p><strong>5.2. Inspect the AMR genes:</strong></p>
+<p>View the legend to interpret the colors in the metadata blocks.</p>
+<p><strong>5.3. Change the metadata block colors (optional):</strong></p>
+<p>You can change the color of the metadata blocks by selecting the <code>Pencil icon ✏️</code> and then <code>Edit Existing Panels</code>. Colors can be adjusted in the <code>Metadata</code> table. Select the <code>Reuse</code> option if you want all color schemes to match.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Questions
+Questions - Group Discussion
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Q5.1. What resistance genes are common? Which are uncommon?</strong></p>
 <textarea rows="5" cols="85" placeholder="...."></textarea>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions - Class Discussion
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><strong>Q5.2. Reviewing the resistant gene data, are there any partitions or clusters of particular concern?</strong></p>
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 </div>
 </div>
 </section>
 <section id="create-a-timeline-15-minutes" class="level1">
-<h1>6. <strong>Create a timeline (15 minutes)</strong></h1>
-<p>INSERT BACKGROUND</p>
+<h1>6. Create a timeline (15 minutes)</h1>
+<p>It is often necessary to consider when two or more isolates were collected to determine if their genomic relationships support an epi link. While you could do this using one or more metadata blocks, Microreact provides the option to create a <code>Timeline</code>, which is specifically designed to interpret longitudinal data.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -3241,67 +3278,91 @@ Note
 <p>This section requires the <code>YEAR</code>, <code>MONTH</code>, and <code>DAY</code> columns added in the <code>Updating the metadata</code> section of this activity.</p>
 </div>
 </div>
-<p>6.1. <strong>Creating a new panel:</strong></p>
-<pre><code>a.  Click on the `Pencil icon ✏️` in the upper right-hand corner of the screen and select `Create new Timeline`.
-b.  Use your cursor to select location for your new Timeline panel.
-c.  Add the `YEAR`, `MONTH`, `DAY` columns to the timeline.</code></pre>
-<p>6.2. <strong>Run the timeline:</strong></p>
-<pre><code>a.  Click the `Play button ▶️` to start the timeline. Samples will appear based on their collection dates.</code></pre>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<p><strong>6.1. Creating a new panel:</strong></p>
+<ol type="a">
+<li>Click on the <code>Pencil icon ✏️</code> in the upper right-hand corner of the screen and select <code>Create new Timeline</code>.</li>
+<li>Use your cursor to select the location for your new Timeline panel.</li>
+<li>Add the <code>YEAR</code>, <code>MONTH</code>, <code>DAY</code> columns to the timeline.</li>
+</ol>
+<p><strong>6.2. Run the timeline:</strong></p>
+<p>Click the <code>Play button ▶️</code> to start the timeline. Samples will appear based on their collection dates.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Questions
+Questions - Class Discussion
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Q6.1. Was running the timeline helpful to understand the samples over time? What additional insights were gained by viewing and running the timeline?</strong></p>
+<p><strong>Q6.1. Was running the timeline helpful for understand the samples over time? What additional insights were gained by viewing and running the timeline?</strong></p>
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 </div>
 </div>
 </section>
 <section id="investigate-the-recent-samples-15-minutes" class="level1">
-<h1>7. <strong>Investigate the recent samples (15 minutes?)</strong></h1>
-<p>7.1. Annotate the <em>new</em> samples:</p>
-<p>There are two samples that have recently been sequenced and added to the analysis. Color the tree nodes by <code>STATUS</code> to visualize these two samples on the tree.</p>
+<h1>7. Investigate the recent samples (15 minutes?)</h1>
+<p>There are two samples that have recently been sequenced and added to the analysis. These samples are denoted as <code>NEW</code> in the <code>STAUS</code> column of the metadata table. Color the tree nodes by <code>STATUS</code> to visualize these samples on the tree.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Questions
+Questions - Group Discussion
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Q7.1. Are these two samples related?</strong></p>
+<p><strong>Q7.1. Are these two samples genomically related?</strong></p>
 <textarea rows="5" cols="85" placeholder="...."></textarea>
-<p><strong>Q7.2. Looking at the timeline, were there samples collected within a similar time frame?</strong></p>
+<p><strong>Q7.2. Looking at the timeline, were there samples collected within a similar time frame to each new sample?</strong></p>
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 <p><strong>Q7.3. Zoom in on each of the new samples. What are the SNP differences between the new isolates and the other isolates closely related to each of these?</strong></p>
 <textarea rows="5" cols="85" placeholder="...."></textarea>
-<p><strong>Q7.4. How would you interpret these and communicate with infection prevention teams or local epidemiologists?</strong></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Questions - Class Discussion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Q7.4. How would you interpret these new samples and communicate with infection prevention teams or local epidemiologists?</strong></p>
 <textarea rows="5" cols="85" placeholder="...."></textarea>
 </div>
 </div>
 </section>
 <section id="saving-and-exporting-the-data-10-minutes" class="level1">
-<h1>8. <strong>Saving and exporting the data (10 minutes)</strong></h1>
-<p>8.1. Download the tree and metadata file:</p>
-<p>insert description</p>
-<p>8.2. Import the tree file into Auspice:</p>
-<p>insert description</p>
-<p>8.3. Import the metadata file into Auspice:</p>
-<p>insert description</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<h1>8. Saving and exporting the data (10 minutes)</h1>
+<p>In this final section, we will explore how to export Microreact projects, along with indivual files for downstream applications.</p>
+<p><strong>8.1. Save the updated Microreact file:</strong></p>
+<ol type="a">
+<li>Clicking the <code>Save Project</code> button at the top-right corner of the page.</li>
+<li>Rename your file and save using the <code>Download as .microreact file</code>.</li>
+<li>This new file can be viewed in the same way you viewed the initial Microreact file at the start of the activity!</li>
+</ol>
+<p><strong>8.2. Download the tree and metadata file:</strong></p>
+<p>Download the metadata file and tree file by clicking on the <code>Download Project Files</code> button at the top-right corner of the page.</p>
+<p><strong>8.3. Import the tree and metadata into Auspice:</strong></p>
+<ol type="a">
+<li>Navigate to https://auspice.us/</li>
+<li>Drag-and-drop the tree file.</li>
+<li>Drag-and-drop the metadata file.</li>
+</ol>
+<p><strong>8.4. Explore Auspice</strong></p>
+<p>Take some time to explore Auspice. A good place to start is adjusting the value in the <code>Color By</code> field.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Questions
+Questions - Class Discussion
 </div>
 </div>
 <div class="callout-body-container callout-body">
