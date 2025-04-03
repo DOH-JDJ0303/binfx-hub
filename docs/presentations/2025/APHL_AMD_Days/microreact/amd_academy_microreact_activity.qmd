@@ -4,7 +4,7 @@ subtitle: "Microreact Activity"
 author:
   - name: "Alexandra Lorentz"
     email: "alexandra.lorentz@dgs.virginia.gov"
-    affiliations: "Virginia State Public Health Laboratory"
+    affiliations: "Virginia Division of Consolidated Laboratory Services"
   - name: "Jared Johnson"
     email: "jared.johnson@doh.wa.gov"
     affiliations: "Washington State Public Health Laboratory"
@@ -152,7 +152,6 @@ You can change the color of the metadata blocks by selecting the `Pencil icon âœ
 ```
 :::
 
-
 # 6. Create a timeline (15 minutes)
 
 It is often necessary to consider when two or more isolates were collected to determine if their genomic relationships support an epi link. While you could do this using one or more metadata blocks, Microreact provides the option to create a `Timeline`, which is specifically designed to interpret longitudinal data.
@@ -223,8 +222,8 @@ In this final section, we will explore how to export Microreact projects, along 
 
 **8.1. Save the updated Microreact file:**
 
-a.  Clicking the `Save Project` button at the top-right corner of the page. 
-b.  Rename your file and save using the `Download as .microreact file`. 
+a.  Clicking the `Save Project` button at the top-right corner of the page.
+b.  Rename your file and save using the `Download as .microreact file`.
 c.  This new file can be viewed in the same way you viewed the initial Microreact file at the start of the activity!
 
 **8.2. Download the tree and metadata file:**

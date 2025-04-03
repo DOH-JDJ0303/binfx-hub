@@ -1,0 +1,67 @@
+---
+title: "APHL AMD Academy"
+subtitle: "Bioinformatic Tool Selection Excerise:\nDownselection Criteria"
+author:
+  - name: "Jared Johnson"
+    email: "jared.johnson@doh.wa.gov"
+    affiliations: "Washington State Public Health Laboratory"
+format: 
+  html:
+    embed-resources: true
+theme: flatly
+title-block-banner: true
+editor: visual
+---
+
+# Instructions
+
+Evaluate the following viral genome assembly tools using the ***ideal*** selection criteria. Assume that each tool produces the desired result, is compatible with your resources and data, and has no security concerns.
+
+::: callout-note
+Use your best judgement when answering questions - there is no need to install or use any of the tools listed below.
+:::
+
+## Tool 1: SPAdes
+
+**GitHub:** <https://github.com/ablab/spades>
+
+::: {.relative style="border-radius: 15px; background-color: rgba(47, 175, 161, 0.5); padding: 20px; font-size: 100%; width: 500px"}
+**Ideal Criteria**
+
+-   [ ] Established Track Record
+-   [ ] Community and Industry Support
+-   [ ] Peer-reviewed
+-   [ ] Version Control
+-   [ ] Comprehensive Documentation
+-   [ ] Easy to Install & Use
+:::
+
+## Tool 2: AccuVIR
+
+**GitHub:** <https://github.com/rainyrubyzhou/AccuVIR>
+
+::: {.relative style="border-radius: 15px; background-color: rgba(47, 175, 161, 0.5); padding: 20px; font-size: 100%; width: 500px"}
+**Ideal Criteria**
+
+-   [ ] Established Track Record
+-   [ ] Community and Industry Support
+-   [ ] Peer-reviewed
+-   [ ] Version Control
+-   [ ] Comprehensive Documentation
+-   [ ] Easy to Install & Use
+:::
+
+## Tool 3: VIGA
+
+**GitHub:** <https://github.com/viralInformatics/VIGA>
+
+::: {.relative style="border-radius: 15px; background-color: rgba(47, 175, 161, 0.5); padding: 20px; font-size: 100%; width: 500px"}
+**Ideal Criteria**
+
+-   [ ] Established Track Record
+-   [ ] Community and Industry Support
+-   [ ] Peer-reviewed
+-   [ ] Version Control
+-   [ ] Comprehensive Documentation
+-   [ ] Easy to Install & Use
+:::
