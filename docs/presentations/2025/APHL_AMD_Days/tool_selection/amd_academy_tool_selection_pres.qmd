@@ -80,13 +80,11 @@ Jared Johnson, PhD, MSc <br> April 8, 2025
 ![](images/clipboard-1396732557.png) ![](images/clipboard-4207363907.png){.absolute left="775" bottom="0"}
 
 :::: {.relative style="font-size: 75%; width: 800px"}
-::: incremental
 -   Bioinformatic tools often have multiple functions / outputs
 
 -   Clearly define what will be reported (e.g., AMR genes, phylogenetic tree, clade, etc.,)
 
 -   Helps to avoid becoming overwhelmed or distracted
-:::
 ::::
 
 ## Who are you reporting to? {background-color="#FFFFFF"}
@@ -144,8 +142,8 @@ Jared Johnson, PhD, MSc <br> April 8, 2025
 # Start the search! 🔍 {background-color="#809658"}
 
 ## Places to start
-
-:::: {.callout-note style="font-size: 95%; width: 500px; position: absolute; left: 0px" icon="false"}
+::: fragment
+::: {.callout-note style="font-size: 95%; width: 500px; position: absolute; left: 0px" icon="false"}
 ### Institutions
 
 ![](images/cdc_logo.png){.absolute top="30%" left="5%" width="50"} ![](images/broad_logo.png){.absolute top="65%" left="5%" width="50"}
@@ -153,19 +151,11 @@ Jared Johnson, PhD, MSc <br> April 8, 2025
 ::: {style="margin-left: 75px;"}
 **CDC** : MycoSNP, PHoeNIx, IRMA/MIRA<br><br>**Broad** : GATK, Terra, Cromwell, IGV, Picard, Pilon
 :::
-::::
-
-:::: {.callout-warning style="font-size: 95%; width: 500px; position: absolute; left: 0px; bottom: 25px" icon="false"}
-### Development Teams
-
-![](images/nextstrain_logo.png){.absolute top="30%" left="5%" width="50"} ![](images/andersen_lab_logo.png){.absolute top="65%" left="5%" width="50"}
-
-::: {style="margin-left: 75px; margin-bottom: 10px;"}
-**Nextstrain** : Nextclade, Auspice, Augur<br><br>**Andersen Lab** : Freyja, iVar
 :::
-::::
+:::
 
-:::: {.callout-tip style="font-size: 95%; width: 500px; position: absolute; left: 575px" icon="false"}
+::: fragment
+::: {.callout-tip style="font-size: 95%; width: 500px; position: absolute; left: 575px" icon="false"}
 ### State Labs
 
 ![](images/UTPHL_logo.png){.absolute top="30%" left="5%" width="50"} ![](images/WAPHL_logo.png){.absolute top="60%" left="5%" width="50"}
@@ -173,9 +163,23 @@ Jared Johnson, PhD, MSc <br> April 8, 2025
 ::: {style="margin-left: 75px; margin-bottom: 10px;"}
 **UT PHL** : Cecrete<br><br>**WA PHL** : BigBacter, VAPER, EPITOME, RECAPP, pre_mycosnp
 :::
-::::
+:::
+:::
 
-:::: {.callout-caution style="font-size: 95%; width: 500px; position: absolute; left: 575px; bottom: 25px" icon="false"}
+::: fragment 
+::: {.callout-warning style="font-size: 95%; width: 500px; position: absolute; left: 0px; bottom: 25px" icon="false"}
+### Development Teams
+
+![](images/nextstrain_logo.png){.absolute top="30%" left="5%" width="50"} ![](images/andersen_lab_logo.png){.absolute top="65%" left="5%" width="50"}
+
+::: {style="margin-left: 75px; margin-bottom: 10px;"}
+**Nextstrain** : Nextclade, Auspice, Augur<br><br>**Andersen Lab** : Freyja, iVar
+:::
+:::
+:::
+
+::: fragment
+::: {.callout-caution style="font-size: 95%; width: 500px; position: absolute; left: 575px; bottom: 25px" icon="false"}
 ### Developers
 
 ![](images/torsten.png){.absolute top="30%" left="5%" width="50"} ![](images/ryan.png){.absolute top="60%" left="5%" width="50"}
@@ -183,7 +187,8 @@ Jared Johnson, PhD, MSc <br> April 8, 2025
 ::: {style="margin-left: 75px;"}
 **Torsten Seemann** : Prokka, Snippy, Shovill, Abricate, mlst<br><br>**Ryan Wick** : Unicycler, Bandage, Polypolish, Trycycler
 :::
-::::
+:::
+:::
 
 ## Theiagen Genomics
 
