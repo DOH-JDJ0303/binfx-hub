@@ -1,0 +1,145 @@
+---
+title: Activity 1 
+format:
+  html:
+    toc: true
+    theme: minty
+    css: theme.css
+    embed-resources: true
+---
+
+# Part 1: Environment isolation
+This activity highlights important differences in how `venv` and `conda` create “isolated” environments.
+
+:::{.card .border-primary .mb-3}
+:::{.card-header}
+## Getting Started
+:::
+
+:::{.card-body}
+#### 1. Record the path to your base `python3` executable
+- Use `command` and `realpath` to expose the source of your `python3` executable.
+  Record this path in the box below for future reference.
+
+```bash
+realpath $(command -v python3)
+```
+
+<span class="text-primary">Record path below:</span>
+<div class="textbox textbox-editable" contenteditable="true"></div>
+
+:::
+:::
+
+
+:::{.card .border-primary .mb-3}
+:::{.card-header}
+## Venv
+:::
+
+:::{.card-body}
+#### 2. Create and activate a new `venv` environment
+- Create a new `venv` environment called `test_env_1`
+  ```bash
+  python3 -m venv test_env_1
+  ```
+
+- Activate your new environment
+  ```bash
+  source test_env_1/bin/activate
+  ```
+
+::: {.callout-tip appearance="simple"}
+You can revert to a clean state at any time with:  
+`deactivate; rm -r test_env_1/`
+:::
+
+#### 3. Determine the location of your Python executable in the `test_env_1` environment
+- Expose the executable path using `command` and `realpath`.
+
+```bash
+realpath $(command -v python3)
+```
+
+<span class="text-primary">Record path below:</span>
+<div class="textbox textbox-editable" contenteditable="true"></div>
+
+**3.1 Is this the same as your base `python3` path?**
+
+<div class="btn-group" role="group">
+  <input type="radio" class="btn-check" name="venv-radio" id="venv-yes" autocomplete="off">
+  <label class="btn btn-outline-primary" for="venv-yes">Yes</label>
+
+  <input type="radio" class="btn-check" name="venv-radio" id="venv-no" autocomplete="off">
+  <label class="btn btn-outline-primary" for="venv-no">No</label>
+</div>
+
+:::
+:::
+
+
+:::{.card .border-primary .mb-4}
+:::{.card-header}
+## Conda / Mamba
+:::
+
+:::{.card-body}
+#### 4. Create and activate a new conda environment
+- Create a new `conda` environment called `test_env_1`
+  ```bash
+  conda create -n test_env_1 python
+  ```
+
+- Activate your new environment
+  ```bash
+  conda activate test_env_1
+  ```
+
+#### 5. Determine the location of your Python executable again
+- Use `command` and `realpath` to determine if the Python executable path changed.
+
+```bash
+realpath $(command -v python3)
+```
+
+<span class="text-primary">Record path below:</span>
+<div class="textbox textbox-editable" contenteditable="true"></div>
+
+**5.1 Is this the same as your base `python3` path?**
+
+<div class="btn-group" role="group">
+  <input type="radio" class="btn-check" name="conda-radio" id="conda-yes" autocomplete="off">
+  <label class="btn btn-outline-primary" for="conda-yes">Yes</label>
+
+  <input type="radio" class="btn-check" name="conda-radio" id="conda-no" autocomplete="off">
+  <label class="btn btn-outline-primary" for="conda-no">No</label>
+</div>
+
+#### 6. Deactivate the conda environment
+- Return to your base environment:
+  ```bash
+  conda deactivate
+  ```
+
+- Confirm you are no longer in `test_env_1`:
+  ```bash
+  conda info --envs
+  ```
+
+#### 7. (Optional) Remove the conda environment entirely
+- Permanently delete the `test_env_1` environment:
+  ```bash
+  conda env remove -n test_env_1
+  ```
+
+::: {.callout-tip appearance="simple"}
+Unlike `venv`, conda environments live outside your project directory.  
+Removing them requires an explicit `conda env remove`.
+:::
+
+:::
+:::
+
+---
+
+# Part 2: ...

@@ -1,0 +1,34 @@
+/* ============================================================================
+   Editable Textbox (Modern, Defined)
+   ============================================================================ */
+
+.textbox {
+  border: 2px solid #374151;        /* dark slate */
+  background-color: #ffffff;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  margin: 1.25rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+/* Editable behavior */
+.textbox-editable {
+  cursor: text;
+}
+
+/* When the editable element is focused, restyle the .textbox */
+.textbox.textbox-editable:focus {
+  outline: none;
+  border-color: #086439bb;
+  box-shadow: 0 0 0 2px rgba(24, 247, 150, 0.26);
+}
+
+/* Placeholder text when empty */
+.textbox.textbox-editable:empty::before {
+  content: attr(data-placeholder);
+  color: #9ca3af;
+  pointer-events: none;
+}
+
