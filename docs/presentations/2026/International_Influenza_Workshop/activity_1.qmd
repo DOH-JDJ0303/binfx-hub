@@ -1,5 +1,5 @@
 ---
-title: Activity 1 
+title: Activity 1
 format:
   html:
     toc: true
@@ -9,20 +9,22 @@ format:
 ---
 
 # Part 1: Environment isolation
+
 This activity highlights important differences in how `venv` and `conda` create “isolated” environments.
 
 :::{.card .border-primary .mb-3}
 :::{.card-header}
 ## Getting Started
 :::
-
 :::{.card-body}
+
 #### 1. Record the path to your base `python3` executable
-- Use `command` and `realpath` to expose the source of your `python3` executable.
-  Record this path in the box below for future reference.
+
+Use `command` and `realpath` to expose the source of your base `python3` executable.  
+Record this path in the box below for future reference.
 
 ```bash
-realpath $(command -v python3)
+realpath "$(command -v python3)"
 ```
 
 <span class="text-primary">Record path below:</span>
@@ -36,29 +38,31 @@ realpath $(command -v python3)
 :::{.card-header}
 ## Venv
 :::
-
 :::{.card-body}
-#### 2. Create and activate a new `venv` environment
-- Create a new `venv` environment called `test_env_1`
-  ```bash
-  python3 -m venv test_env_1
-  ```
 
-- Activate your new environment
-  ```bash
-  source test_env_1/bin/activate
-  ```
+#### 2. Create and activate a new `venv` environment
+
+Create a new `venv` environment called `test_env_1`:
+
+```bash
+python3 -m venv test_env_1
+```
+
+Activate your new environment:
+
+```bash
+source test_env_1/bin/activate
+```
 
 ::: {.callout-tip appearance="simple"}
 You can revert to a clean state at any time with:  
-`deactivate; rm -r test_env_1/`
+`deactivate; rm -rf test_env_1/`
 :::
 
-#### 3. Determine the location of your Python executable in the `test_env_1` environment
-- Expose the executable path using `command` and `realpath`.
+#### 3. Determine the location of your Python executable in `test_env_1`
 
 ```bash
-realpath $(command -v python3)
+realpath "$(command -v python3)"
 ```
 
 <span class="text-primary">Record path below:</span>
@@ -78,28 +82,30 @@ realpath $(command -v python3)
 :::
 
 
-:::{.card .border-primary .mb-4}
+:::{.card .border-primary .mb-3}
 :::{.card-header}
 ## Conda / Mamba
 :::
-
 :::{.card-body}
+
 #### 4. Create and activate a new conda environment
-- Create a new `conda` environment called `test_env_1`
-  ```bash
-  conda create -n test_env_1 python
-  ```
 
-- Activate your new environment
-  ```bash
-  conda activate test_env_1
-  ```
-
-#### 5. Determine the location of your Python executable again
-- Use `command` and `realpath` to determine if the Python executable path changed.
+Create a new conda environment called `test_env_1`:
 
 ```bash
-realpath $(command -v python3)
+conda create -n test_env_1 python
+```
+
+Activate your new environment:
+
+```bash
+conda activate test_env_1
+```
+
+#### 5. Determine the location of your Python executable again
+
+```bash
+realpath "$(command -v python3)"
 ```
 
 <span class="text-primary">Record path below:</span>
@@ -115,31 +121,215 @@ realpath $(command -v python3)
   <label class="btn btn-outline-primary" for="conda-no">No</label>
 </div>
 
-#### 6. Deactivate the conda environment
-- Return to your base environment:
-  ```bash
-  conda deactivate
-  ```
-
-- Confirm you are no longer in `test_env_1`:
-  ```bash
-  conda info --envs
-  ```
-
-#### 7. (Optional) Remove the conda environment entirely
-- Permanently delete the `test_env_1` environment:
-  ```bash
-  conda env remove -n test_env_1
-  ```
-
-::: {.callout-tip appearance="simple"}
-Unlike `venv`, conda environments live outside your project directory.  
-Removing them requires an explicit `conda env remove`.
-:::
-
 :::
 :::
 
 ---
 
-# Part 2: ...
+# Part 2: Silent Changes
+
+This section shows how `pip` can silently alter already-installed packages to satisfy new requirements, potentially breaking existing workflows. Then you will repeat the same setup using `conda`.
+
+:::{.callout-note appearance="simple"}
+Attempt each step below before exposing the answer
+:::
+
+:::{.card .border-secondary .mb-3}
+:::{.card-header}
+## Part 2A: Business as usual (`venv`)
+:::
+:::{.card-body}
+
+#### 1. Download the test script and dataset
+This activity will use a simple python script that reads in two CSV files and joins them together using `pandas`.
+
+Use the commands below to download the Python script and CSV files.
+```bash
+wget https://github.com/DOH-JDJ0303/binfx-hub/raw/refs/heads/main/docs/presentations/2026/International_Influenza_Workshop/pt2_script.py -O pt2_script.py
+wget https://github.com/DOH-JDJ0303/binfx-hub/raw/refs/heads/main/docs/presentations/2026/International_Influenza_Workshop/pt2_data_1.csv -O pt2_data_1.csv
+wget https://github.com/DOH-JDJ0303/binfx-hub/raw/refs/heads/main/docs/presentations/2026/International_Influenza_Workshop/pt2_data_2.csv -O pt2_data_2.csv
+```
+
+#### 2. Create and activate a new `venv` environment
+
+Use `venv` create and activate new environment called `test_env_2`.
+
+:::{.callout-tip collapse="true" appearance="minimal"}
+## Answer
+```bash
+python3 -m venv test_env_2
+source test_env_2/bin/activate
+```
+:::
+
+#### 3. Install pinned dependencies
+
+The Python script requires `pandas` v1.5.0, which requires a `numpy` version < 2. Install these in your `test_env_2` environment.
+
+:::{.callout-tip collapse="true" appearance="minimal"}
+## Answer
+```bash
+pip install --upgrade pip "numpy<2.0" "pandas==1.5.0"
+```
+:::
+
+#### 4. Run the test script
+Run the script you downloaded in step 1.
+
+```bash
+python3 ./pt2_script.py
+```
+
+If successful, it should print out a summary of three dataframes: `Dataframe 1`, `Dataframe 2`, and `Combined Dataframes`
+
+**Did the script work?**
+
+<div class="btn-group" role="group">
+  <input type="radio" class="btn-check" name="venv-radio2" id="venv2-yes" autocomplete="off">
+  <label class="btn btn-outline-primary" for="venv2-yes">Yes</label>
+
+  <input type="radio" class="btn-check" name="venv-radio2" id="venv2-no" autocomplete="off">
+  <label class="btn btn-outline-primary" for="venv2-no">No</label>
+</div>
+
+:::
+:::
+
+:::{.card .border-secondary .mb-3}
+:::{.card-header}
+## Part 2A: The disruption
+:::
+:::{.card-body}
+
+#### 5. Install scanpy with pip
+One of the other bioinformaticians in your lab is having trouble installing the Python module, `scanpy`. They ask if you are able to install it on your machine.
+
+:::{.callout-tip collapse="true" appearance="minimal"}
+## Answer
+```bash
+pip install scanpy
+```
+:::
+
+#### 6. Back to your test script
+
+With that out of the way, you get back to running your test script.
+```bash
+python3 pt2_script.py
+```
+
+**Did the script work?**
+
+<div class="btn-group" role="group">
+  <input type="radio" class="btn-check" name="venv-radio3" id="venv3-yes" autocomplete="off">
+  <label class="btn btn-outline-primary" for="venv3-yes">Yes</label>
+
+  <input type="radio" class="btn-check" name="venv-radio3" id="venv3-no" autocomplete="off">
+  <label class="btn btn-outline-primary" for="venv3-no">No</label>
+</div>
+
+**If not, why?**
+
+<span class="text-primary">Record notes below:</span>
+<div class="textbox textbox-editable" contenteditable="true"></div>
+
+:::{.callout-tip collapse="true" appearance="minimal"}
+## Answer
+Check your `pandas` version using `pip list | grep pandas`. Does this match the `v1.5.0` you installed in step 3?
+:::
+
+:::
+:::
+
+:::{.card .border-secondary .mb-3}
+:::{.card-header}
+## Part 2B: Business as usual (`conda`)
+:::
+:::{.card-body}
+
+#### 1. Create and activate a new conda environment
+
+Use `conda` to create and activate a new environment called `test_env_2`
+
+:::{.callout-tip collapse="true" appearance="minimal"}
+## Answer
+```bash
+conda create -n test_env_2 python=3.10 -y
+conda activate test_env_2
+```
+:::
+
+#### 2. Install the pinned dependencies with conda
+
+Install the same dependencies as before (`pandas` v1.5.0 and `numpy` < v2.0), but with `conda`.
+
+:::{.callout-tip collapse="true" appearance="minimal"}
+## Answer
+```bash
+conda install -y -c conda-forge "numpy<2.0" "pandas=1.5.0"
+```
+:::
+
+#### 3. Run the test script:
+
+```bash
+python3 ./pt2_script.py
+```
+
+**Did the script work?**
+
+<div class="btn-group" role="group">
+  <input type="radio" class="btn-check" name="conda-radio2" id="conda2-yes" autocomplete="off">
+  <label class="btn btn-outline-primary" for="conda2-yes">Yes</label>
+
+  <input type="radio" class="btn-check" name="conda-radio2" id="conda2-no" autocomplete="off">
+  <label class="btn btn-outline-primary" for="conda2-no">No</label>
+</div>
+
+#### 4. Install scanpy with Conda
+Use conda to install `scanpy` and confirm `[Y]` / deny `[n]` the changes based on the summary.
+
+:::{.callout-tip collapse="true" appearance="minimal"}
+## Answer
+```bash
+conda install -c conda-forge -c bioconda scanpy
+```
+:::
+
+<span class="text-primary"> Which did you choose - `Y` or `n`? Why?</span>
+<div class="textbox textbox-editable" contenteditable="true"></div>
+
+#### 5. Run the test script:
+Try the test script one time after making your decision.
+
+```bash
+python3 ./pt2_script.py
+```
+
+**Did the script work?**
+
+<div class="btn-group" role="group">
+  <input type="radio" class="btn-check" name="conda-radio3" id="conda3-yes" autocomplete="off">
+  <label class="btn btn-outline-primary" for="conda3-yes">Yes</label>
+
+  <input type="radio" class="btn-check" name="conda-radio3" id="conda3-no" autocomplete="off">
+  <label class="btn btn-outline-primary" for="conda3-no">No</label>
+</div>
+
+**Do you regret your decision?**
+
+<div class="btn-group" role="group">
+  <input type="radio" class="btn-check" name="conda-radio4" id="conda4-yes" autocomplete="off">
+  <label class="btn btn-outline-primary" for="conda4-yes">Yes</label>
+
+  <input type="radio" class="btn-check" name="conda-radio4" id="conda4-no" autocomplete="off">
+  <label class="btn btn-outline-primary" for="conda4-no">No</label>
+</div>
+
+:::{.callout-tip collapse="true" appearance="minimal"}
+## Answer
+Conda warned us that installing `scanpy` would require updating to a new version of `pandas`. This allowed us to avoid silently breaking the `pandas v1.5.0` dependency of `pt2_script.py`.
+:::
+
+:::
+:::
