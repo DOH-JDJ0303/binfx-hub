@@ -1,0 +1,381 @@
+---
+format:
+  html:
+    page-layout: article
+title: "ational Influenza Genomic Surveillance Report"
+author:
+  - name: Jane Doe
+    email: jane.doe@mail.com
+    corresponding: true
+  - name: John Doe
+date: today
+execute:
+  echo: false
+  warning: false
+  message: false
+  error: false
+params:
+  meta_file: "gisaid_epiflu_isolates.xls"
+  tree_file: "tree.nwk"
+  country: "United States"
+  
+---
+
+**Country:**  
+**Influenza Season:** (e.g., 2025 Southern Hemisphere)  
+**Reporting Period:** (Start date – End date)  
+**Prepared by:** National Influenza Center / Genomic Surveillance Unit  
+**Date of Report:**  
+
+```{r}
+# install.packages("tidyverse")
+# install.packages("BiocManager")
+# BiocManager::install("ggtree")
+# install.packages('lubridate')
+# install.packages("readxl")
+# install.packages("sf")
+# install.packages("rnaturalearth")
+# install.packages("rnaturalearthdata")
+# install.packages("countrycode")
+# install.packages("scales")
+# install.packages("scatterpie")
+# install.packages("phangorn")
+# install.packages("patchwork")
+```
+
+```{r}
+library(tidyverse)
+library(ggtree)
+library(knitr)
+library(lubridate)
+library(readxl)
+
+library(sf)
+library(rnaturalearth)
+library(countrycode)
+library(scales)
+library(scatterpie)
+library(phangorn)
+library(patchwork)
+```
+
+```{r}
+df <- read_excel(params$meta_file) %>%
+  mutate(
+    sid     = str_split_fixed(`HA Segment_Id`, "\\|", 2)[, 1],
+    date    = ymd(Collection_Date),
+    month = floor_date(date, "month"),
+    country = trimws(str_split_fixed(Location, "/", 4)[, 2]),
+    clade   = apply(str_split_fixed(Clade, "\\.", 6)[, 1:3], 1, paste, collapse = ".")
+  ) %>%
+  select(sid, date, month, country, clade) %>%
+  mutate(
+    clade = as.factor(clade)
+  )
+
+# ---- consistent clade colors for the whole document ----
+clade_levels  <- levels(droplevels(df$clade))
+clade_palette <- setNames(hue_pal()(length(clade_levels)), clade_levels)
+
+df <- df |> 
+  mutate(
+    clade = factor(clade, levels = clade_levels)
+  )
+```
+
+## 1. Executive Summary
+
+This report summarizes influenza virus genomic surveillance conducted during the **[season]** influenza season in **[country]**. Surveillance integrates routine virological testing with whole-genome sequencing to monitor circulating influenza strains, genetic diversity, antiviral resistance markers, and phylogenetic relationships.
+
+Key findings:
+- Total specimens tested: **[N]**
+- Influenza-positive specimens: **[N]**
+- Viruses sequenced: **[N]**
+- Dominant clades/subclades: **[e.g., A(H1N1)pdm09 clade 6B.1A.5a]**
+- Antiviral resistance marker H275Y detected in **[N]** viruses
+
+---
+
+## 2. Surveillance System and Sample Collection
+
+### 2.1 Surveillance Design
+
+Specimens were collected through:
+- ☐ Sentinel outpatient influenza-like illness (ILI) surveillance  
+- ☐ Severe acute respiratory infection (SARI) surveillance  
+- ☐ Hospital-based surveillance  
+- ☐ Outbreak investigations  
+- ☐ Other: **[specify]**
+
+### 2.2 Sample Collection Method
+
+- **Specimen type:** (e.g., nasopharyngeal swab, oropharyngeal swab)
+- **Collection medium:** (e.g., viral transport medium)
+- **Testing laboratories:** **[list]**
+- **Age groups included:** **[e.g., all ages / ≥6 months]**
+- **Geographic coverage:** **[national / subnational regions]**
+
+### 2.3 Sample Collection Timeline
+```{r}
+#| fig-cap: "Figure 1. Sample collection times of reported clades."
+
+df |>
+  drop_na(date) |>
+  count(clade, month, name = "n") |>
+  complete(
+    clade,
+    month = seq(min(month), max(month), by = "month"),
+    fill = list(n = 0)
+  ) |>
+  arrange(month) |>
+  ggplot(aes(month, n, fill = clade)) +
+  geom_area() +
+  scale_fill_manual(values = clade_palette, drop = FALSE) +
+  theme_bw() +
+  labs(x = "Collection Date", y = "Number Reported", fill = "Clade")
+```
+
+### 2.4 Sample Collection Locations
+```{r}
+#| fig-cap: "Figure 2. Geographic distribution of reported clades."
+
+# World polygons (sf)
+world <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf") |>
+  select(iso_a3, name_long, geometry)
+
+# ---- clade composition per country (wide) ----
+df_country_wide <- df |>
+  drop_na(country, clade) |>
+  mutate(
+    iso_a3 = countrycode(country, origin = "country.name", destination = "iso3c"),
+    clade  = factor(clade, levels = clade_levels)
+  ) |>
+  drop_na(iso_a3) |>
+  count(iso_a3, clade, name = "n") |>
+  tidyr::pivot_wider(names_from = clade, values_from = n, values_fill = 0) |>
+  mutate(total_n = rowSums(across(all_of(clade_levels))))
+
+# ---- centroids for each country polygon ----
+world_pts <- world |>
+  st_centroid(of_largest_polygon = TRUE) |>
+  mutate(
+    lon = st_coordinates(geometry)[, 1],
+    lat = st_coordinates(geometry)[, 2]
+  ) |>
+  st_drop_geometry() |>
+  select(iso_a3, lon, lat)
+
+# ---- join pies to centroids ----
+pies <- df_country_wide |>
+  inner_join(world_pts, by = "iso_a3")
+
+# ---- plot: base map + pie charts ----
+world |>
+  ggplot() +
+  geom_sf(fill = "grey95", color = "white", linewidth = 0.1) +
+  scatterpie::geom_scatterpie(
+    data = pies,
+    aes(x = lon, y = lat, r = sqrt(total_n)),   # size pies by sample count
+    cols = clade_levels,
+    color = NA
+  ) +
+  coord_sf(expand = FALSE) +
+  scale_fill_manual(values = clade_palette, drop = FALSE) +
+  theme_bw() +
+  labs(fill = "Clade") +
+  theme(
+    axis.title = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    panel.grid = element_blank()
+  )
+```
+
+## 3. Virological Screening Results
+
+### 3.1 Total Specimens Tested
+
+| Metric | Count |
+|------|------:|
+| Total specimens tested | |
+| Influenza-positive specimens | |
+| Influenza-negative specimens | |
+
+### 3.2 Influenza Type and Subtype Distribution
+
+| Virus Type / Subtype | Count | Percentage (%) |
+|---------------------|------:|---------------:|
+| Influenza A (total) | | |
+| └─ A(H1N1)pdm09 | | |
+| └─ A(H3N2) | | |
+| Influenza B (total) | | |
+| └─ B/Victoria lineage | | |
+| └─ B/Yamagata lineage | | |
+| **Total influenza positive** | | 100 |
+
+---
+
+## 4. Sequencing Overview
+
+### 4.1 Sequencing Selection Criteria
+
+Specimens were selected for sequencing based on:
+- ☐ Ct value ≤ **[threshold]**
+- ☐ Geographic representation
+- ☐ Temporal distribution across season
+- ☐ Age group or clinical severity
+- ☐ Other: **[specify]**
+
+### 4.2 Sequencing Output and Quality
+
+| Metric | Count |
+|------|------:|
+| Influenza-positive specimens eligible for sequencing | |
+| Specimens submitted for sequencing | |
+| Successfully sequenced genomes | |
+| Genomes passing QC thresholds | |
+| Genomes failing QC | |
+
+**Passing rate:** **[X%]** (passing QC / sequenced)
+
+QC thresholds included:
+- Minimum genome coverage: **[e.g., ≥90%]**
+- Maximum ambiguous bases (Ns): **[e.g., ≤5%]**
+
+---
+
+## 5. Clade and Subclade Distribution (Nextclade)
+
+Clade assignment was performed using **Nextclade** (version **[X]**, dataset **[Y]**).
+
+### 5.1 Influenza A(H1N1)pdm09
+
+| Clade / Subclade | Count | Percentage (%) |
+|------------------|------:|---------------:|
+| | | |
+| | | |
+| **Total** | | 100 |
+
+### 5.2 Influenza A(H3N2)
+
+| Clade / Subclade | Count | Percentage (%) |
+|------------------|------:|---------------:|
+| | | |
+| | | |
+| **Total** | | 100 |
+
+### 5.3 Influenza B
+
+| Lineage / Clade | Count | Percentage (%) |
+|-----------------|------:|---------------:|
+| | | |
+| | | |
+| **Total** | | 100 |
+
+---
+
+## 6. Antiviral Resistance Markers
+
+### 6.1 Neuraminidase H275Y (A(H1N1)pdm09)
+
+| Metric | Count |
+|------|------:|
+| A(H1N1)pdm09 genomes analyzed | |
+| Viruses with H275Y mutation | |
+| Percentage with H275Y | |
+
+**Interpretation:**  
+The H275Y substitution is associated with reduced susceptibility to oseltamivir.
+
+---
+
+## 7. Phylogenetic Analysis
+
+### 7.1 Methods
+
+- **Alignment:** **[e.g., MAFFT]**
+- **Phylogenetic inference:** **[e.g., IQ-TREE / FastTree]**
+- **Reference strains:** WHO vaccine reference strains for the **[season]** season
+- **Gene(s) analyzed:** ☐ HA ☐ NA ☐ Whole genome
+
+### 7.2 Phylogenetic Tree Summary
+
+- Circulating viruses clustered primarily with **[reference clade/strain]**
+- No major divergent clusters were observed ☐ / Divergent clusters were observed ☐
+- Genetic diversity was **[low / moderate / high]**
+
+### 7.3 Phylogenetic Tree
+
+# Phylogenetic tree
+```{r}
+#| fig-cap: "Figure 3. Phylogenetic tree with clade annotation."
+
+tree <- read.tree(params$tree_file) |>
+  midpoint()
+
+# ---- 1) Build tree plot and extract *plotted* tip order ----
+p_tree <- ggtree(tree)
+
+tip_order <- p_tree$data |>
+  dplyr::filter(isTip) |>
+  dplyr::arrange(y) |>
+  dplyr::pull(label)
+
+df_tree <- df |>
+  dplyr::filter(sid %in% tip_order) |>
+  dplyr::mutate(sid = factor(sid, levels = tip_order))
+
+# ---- 2) Clade tile (1 column) ----
+p_clade <- ggplot(df_tree, aes(x = "Clade", y = sid, fill = clade)) +
+  geom_tile(width = 0.95, height = 0.95) +
+  scale_y_discrete(limits = tip_order, expand = c(0, 0)) +
+  scale_x_discrete(expand = c(0, 0)) +
+  labs(x = NULL, y = NULL) +
+  theme_minimal(base_size = 10) +
+  theme(
+    axis.text.y = element_blank(),
+    axis.ticks = element_blank(),
+    panel.grid = element_blank(),
+    legend.position = "right",
+    plot.margin = margin(5.5, 0, 5.5, 5.5)
+  )+
+  scale_fill_manual(values = clade_palette, drop = FALSE)+
+  labs(fill="Cade")
+
+
+# ---- 4) Combine with patchwork ----
+final <- p_tree + p_clade +
+  plot_layout(widths = c(4, 0.5))
+
+final
+```
+
+---
+
+## 8. Data Sharing
+
+- Sequences submitted to: ☐ GISAID ☐ GenBank
+- Number of sequences shared: **[N]**
+- Accession IDs: **[range or link]**
+
+---
+
+## 9. Limitations
+
+- Sequencing coverage may not be fully representative of all regions.
+- Selection bias due to Ct-based sequencing thresholds.
+- Turnaround time varied during peak transmission periods.
+
+---
+
+## 10. Conclusions and Public Health Implications
+
+Genomic surveillance during the **[season]** influenza season demonstrated **[key findings]**, supporting national and global influenza risk assessment and vaccine strain selection processes.
+
+---
+
+## 11. Acknowledgements
+
+We acknowledge sentinel sites, laboratories, clinicians, and data contributors supporting influenza surveillance in **[country]**.
+
+---
