@@ -3,24 +3,98 @@ title: Activity 1
 format:
   html:
     toc: true
-    theme: minty
+    theme: darkly
     css: theme.css
     embed-resources: true
 ---
 
-# Part 1: Environment isolation
+# Part 1: Installing Venv and Micromamba
 
-This activity highlights important differences in how `venv` and `conda` create “isolated” environments.
+This section walks through installing `venv` and `micromamba` for use in later sections.
+
+:::{.card .border-primary .mb-3 }
+:::{.card-header}
+## Installing Micromamba
+:::
+:::{.card-body}
+This process installs the latest version of `micromamba` into your `$HOME` directory.
+
+Skip to [Installing Venv](#installing-venv) if you plan to use an existing installation of `micromamba`, `mamba`, `conda`, or `miniconda`.
+
+### 1. Install Micromamba
+
+Check if `micromamba` is installed:
+
+```bash
+micromamba --version
+```
+
+Install `micromamba`, if needed. This should install `micromamba` in your home directory (no `sudo` required):
+
+```bash
+"${SHELL}" <(curl -L micro.mamba.pm/install.sh)
+```
+
+Reset your shell:
+
+```bash
+source ~/.bashrc # (or ~/.zshrc, ~/.xonshrc, ~/.config/fish/config.fish, ...)
+```
+
+### 2. Add `bioconda` channel (optional)
+
+You can optionally add the `bioconda` channel to your set of defaults:
+
+```bash
+micromamba config append channels bioconda
+```
+:::
+:::
 
 :::{.card .border-primary .mb-3}
+:::{.card-header}
+## Installing Venv
+:::
+:::{.card-body}
+This process checks whether `venv` is available via your system-wide Python. If not, you will install Python (with `venv`) inside a `micromamba` environment (suitable for non-root users).
+
+### 3. Check if `venv` is installed
+
+The command below helps determine whether `venv` is installed via your base Python. If a help menu is returned, move to [Part 2](#part-2-environment-isolation). Otherwise, proceed to step 4 to install Python (with `venv`) inside a `micromamba` environment.
+
+```bash
+python3 -m venv --help
+```
+
+### 4. Install `python` and `venv` (included with Python v3.11) in a `micromamba` environment
+
+```bash
+micromamba create -n py311_env python=3.11
+```
+:::
+:::
+
+# Part 2: Environment Isolation
+
+This activity highlights important differences in how `venv` and `micromamba` create _isolated_ environments.
+
+:::{.callout-note appearance="simple"}
+Attempt each step below before exposing the answer.
+:::
+
+:::{.card .border-secondary .mb-3}
 :::{.card-header}
 ## Getting Started
 :::
 :::{.card-body}
 
-#### 1. Record the path to your base `python3` executable
+:::{.callout-note}
+These steps should be performed within your `py311_env` environment if you are not using a system-wide installation of `venv`. You can activate this environment using `micromamba activate py311_env`.
+:::
 
-Use `command` and `realpath` to expose the source of your base `python3` executable.  
+### 1. Record the path to your base `python3` executable
+
+Use `command` and `realpath` to expose the source of your `python3` executable.  
 Record this path in the box below for future reference.
 
 ```bash
@@ -33,33 +107,36 @@ realpath "$(command -v python3)"
 :::
 :::
 
-
-:::{.card .border-primary .mb-3}
+:::{.card .border-secondary .mb-3}
 :::{.card-header}
-## Venv
+## Venv Environments
 :::
 :::{.card-body}
 
-#### 2. Create and activate a new `venv` environment
+:::{.callout-note}
+These steps should be performed within your `py311_env` environment if you are not using a system-wide installation of `venv`. You can activate this environment using `micromamba activate py311_env`.
+:::
 
-Create a new `venv` environment called `test_env_1`:
+### 2. Create and activate a new `venv` environment
+
+Create a new `venv` environment called `venv_test_1`:
 
 ```bash
-python3 -m venv test_env_1
+python3 -m venv venv_test_1
 ```
 
 Activate your new environment:
 
 ```bash
-source test_env_1/bin/activate
+source venv_test_1/bin/activate
 ```
 
 ::: {.callout-tip appearance="simple"}
 You can revert to a clean state at any time with:  
-`deactivate; rm -rf test_env_1/`
+`deactivate; rm -rf venv_test_1/`
 :::
 
-#### 3. Determine the location of your Python executable in `test_env_1`
+### 3. Determine the location of your Python executable in `venv_test_1`
 
 ```bash
 realpath "$(command -v python3)"
@@ -68,7 +145,7 @@ realpath "$(command -v python3)"
 <span class="text-primary">Record path below:</span>
 <div class="textbox textbox-editable" contenteditable="true"></div>
 
-**3.1 Is this the same as your base `python3` path?**
+**3.1 Is this the same as the previous `python3` path?**
 
 <div class="btn-group" role="group">
   <input type="radio" class="btn-check" name="venv-radio" id="venv-yes" autocomplete="off">
@@ -78,31 +155,54 @@ realpath "$(command -v python3)"
   <label class="btn btn-outline-primary" for="venv-no">No</label>
 </div>
 
+:::{.callout-tip collapse="true" appearance="minimal"}
+## Answer
+Your `venv_test_1` environment should use the same Python executable recorded in step 1. This is because Venv only changes where your base Python searches for modules.
+:::
+
+### 4. Deactivate your environment(s)
+
+Deactivate your `venv` environment:
+
+```bash
+deactivate
+```
+
+Deactivate your `py311_env` environment, if used:
+
+```bash
+micromamba deactivate
+```
+
+You should now be in your base environment.
 :::
 :::
 
-
-:::{.card .border-primary .mb-3}
+:::{.card .border-secondary .mb-3}
 :::{.card-header}
-## Conda / Mamba
+## Conda / Mamba Environments
 :::
 :::{.card-body}
 
-#### 4. Create and activate a new conda environment
+:::{.callout-note appearance="simple"}
+The following should be performed from your base environment, not the `py311_env` created in Part 1. You can return to your base environment using `micromamba deactivate`.
+:::
 
-Create a new conda environment called `test_env_1`:
+### 4. Create and activate a new `micromamba` environment
+
+Create a new `micromamba` environment called `mamba_test_1`:
 
 ```bash
-conda create -n test_env_1 python
+micromamba create -n mamba_test_1 python=3.11
 ```
 
 Activate your new environment:
 
 ```bash
-conda activate test_env_1
+micromamba activate mamba_test_1
 ```
 
-#### 5. Determine the location of your Python executable again
+### 5. Determine the location of your Python executable again
 
 ```bash
 realpath "$(command -v python3)"
@@ -111,60 +211,71 @@ realpath "$(command -v python3)"
 <span class="text-primary">Record path below:</span>
 <div class="textbox textbox-editable" contenteditable="true"></div>
 
-**5.1 Is this the same as your base `python3` path?**
+**5.1 Is this the same as the `python3` path in step 1?**
 
 <div class="btn-group" role="group">
-  <input type="radio" class="btn-check" name="conda-radio" id="conda-yes" autocomplete="off">
-  <label class="btn btn-outline-primary" for="conda-yes">Yes</label>
+  <input type="radio" class="btn-check" name="micromamba-radio" id="micromamba-yes" autocomplete="off">
+  <label class="btn btn-outline-primary" for="micromamba-yes">Yes</label>
 
-  <input type="radio" class="btn-check" name="conda-radio" id="conda-no" autocomplete="off">
-  <label class="btn btn-outline-primary" for="conda-no">No</label>
+  <input type="radio" class="btn-check" name="micromamba-radio" id="micromamba-no" autocomplete="off">
+  <label class="btn btn-outline-primary" for="micromamba-no">No</label>
 </div>
+
+:::{.callout-tip collapse="true" appearance="minimal"}
+## Answer
+Your `mamba_test_1` environment should use a different Python executable than recorded in step 1. This is because Conda and Mamba install a new Python executable for each environment, making it independent from your base installation.
+:::
 
 :::
 :::
 
 ---
 
-# Part 2: Silent Changes
+# Part 3: Silent Changes
 
-This section shows how `pip` can silently alter already-installed packages to satisfy new requirements, potentially breaking existing workflows. Then you will repeat the same setup using `conda`.
+This section shows how `pip` can silently alter already-installed packages to satisfy new requirements, potentially breaking existing workflows. Then you will repeat the same setup using `micromamba`.
 
 :::{.callout-note appearance="simple"}
-Attempt each step below before exposing the answer
+Attempt each step below before exposing the answer.
 :::
 
-:::{.card .border-secondary .mb-3}
+:::{.card .border-info .mb-3}
 :::{.card-header}
-## Part 2A: Business as usual (`venv`)
+## Part 3A: Testing a new script (`venv`)
 :::
 :::{.card-body}
 
-#### 1. Download the test script and dataset
-This activity will use a simple python script that reads in two CSV files and joins them together using `pandas`.
+### 1. Download the test script and dataset
 
-Use the commands below to download the Python script and CSV files.
+This activity uses a simple Python script that reads in two CSV files and joins them together using `pandas`.
+
+Use the commands below to download the Python script and CSV files:
+
 ```bash
-wget https://github.com/DOH-JDJ0303/binfx-hub/raw/refs/heads/main/docs/presentations/2026/International_Influenza_Workshop/pt2_script.py -O pt2_script.py
-wget https://github.com/DOH-JDJ0303/binfx-hub/raw/refs/heads/main/docs/presentations/2026/International_Influenza_Workshop/pt2_data_1.csv -O pt2_data_1.csv
-wget https://github.com/DOH-JDJ0303/binfx-hub/raw/refs/heads/main/docs/presentations/2026/International_Influenza_Workshop/pt2_data_2.csv -O pt2_data_2.csv
+curl https://github.com/DOH-JDJ0303/binfx-hub/raw/refs/heads/main/docs/presentations/2026/International_Influenza_Workshop/pt2_script.py -o pt2_script.py
+curl https://github.com/DOH-JDJ0303/binfx-hub/raw/refs/heads/main/docs/presentations/2026/International_Influenza_Workshop/pt2_data_1.csv -o pt2_data_1.csv
+curl https://github.com/DOH-JDJ0303/binfx-hub/raw/refs/heads/main/docs/presentations/2026/International_Influenza_Workshop/pt2_data_2.csv -o pt2_data_2.csv
 ```
 
-#### 2. Create and activate a new `venv` environment
+### 2. Create and activate a new `venv` environment
 
-Use `venv` create and activate new environment called `test_env_2`.
+:::{.callout-note}
+These steps should be performed within your `py311_env` environment if you are not using a system-wide installation of `venv`. You can activate this environment using `micromamba activate py311_env`.
+:::
+
+Use `venv` to create and activate a new environment called `venv_test_2`.
 
 :::{.callout-tip collapse="true" appearance="minimal"}
 ## Answer
 ```bash
-python3 -m venv test_env_2
-source test_env_2/bin/activate
+python3 -m venv venv_test_2
+source venv_test_2/bin/activate
 ```
 :::
 
-#### 3. Install pinned dependencies
+### 3. Install pinned dependencies
 
-The Python script requires `pandas` v1.5.0, which requires a `numpy` version < 2. Install these in your `test_env_2` environment.
+The Python script requires `pandas` v1.5.0, which requires a `numpy` version < 2. Install these in your `venv_test_2` environment.
 
 :::{.callout-tip collapse="true" appearance="minimal"}
 ## Answer
@@ -173,14 +284,15 @@ pip install --upgrade pip "numpy<2.0" "pandas==1.5.0"
 ```
 :::
 
-#### 4. Run the test script
-Run the script you downloaded in step 1.
+### 4. Run the test script
+
+Run the script you downloaded in step 1:
 
 ```bash
 python3 ./pt2_script.py
 ```
 
-If successful, it should print out a summary of three dataframes: `Dataframe 1`, `Dataframe 2`, and `Combined Dataframes`
+If successful, it should print a summary of three dataframes: `Dataframe 1`, `Dataframe 2`, and `Combined Dataframes`.
 
 **Did the script work?**
 
@@ -195,14 +307,15 @@ If successful, it should print out a summary of three dataframes: `Dataframe 1`,
 :::
 :::
 
-:::{.card .border-secondary .mb-3}
+:::{.card .border-info .mb-3}
 :::{.card-header}
-## Part 2A: The disruption
+## Part 3A: The disruption (`venv`)
 :::
 :::{.card-body}
 
-#### 5. Install scanpy with pip
-One of the other bioinformaticians in your lab is having trouble installing the Python module, `scanpy`. They ask if you are able to install it on your machine.
+### 5. Install `scanpy` with `pip`
+
+One of the other bioinformaticians in your lab is having trouble installing the Python module `scanpy`. They ask if you are able to install it on your machine.
 
 :::{.callout-tip collapse="true" appearance="minimal"}
 ## Answer
@@ -211,11 +324,12 @@ pip install scanpy
 ```
 :::
 
-#### 6. Back to your test script
+### 6. Back to your test script
 
-With that out of the way, you get back to running your test script.
+With that out of the way, you get back to running your test script:
+
 ```bash
-python3 pt2_script.py
+python3 ./pt2_script.py
 ```
 
 **Did the script work?**
@@ -235,42 +349,69 @@ python3 pt2_script.py
 
 :::{.callout-tip collapse="true" appearance="minimal"}
 ## Answer
-Check your `pandas` version using `pip list | grep pandas`. Does this match the `v1.5.0` you installed in step 3?
+
+Check your `pandas` version using:
+
+```bash
+pip list | grep pandas
+```
+
+Does this match the `v1.5.0` you installed in step 3?
+
+`pip` can silently change the version of existing modules (in this case, `pandas`) when installing new packages (in this case, `scanpy`). This can break dependencies and render older scripts unusable (in this case, `pt2_script.py`)!
+
+### 7. Return to the base environment
+
+Deactivate your `venv` environment:
+
+```bash
+deactivate
+```
+
+Deactivate your `micromamba` environment, if needed:
+
+```bash
+micromamba deactivate
+```
 :::
 
 :::
 :::
 
-:::{.card .border-secondary .mb-3}
+:::{.card .border-info .mb-3}
 :::{.card-header}
-## Part 2B: Business as usual (`conda`)
+## Part 3B: Testing a new script (`micromamba`)
 :::
 :::{.card-body}
 
-#### 1. Create and activate a new conda environment
+:::{.callout-note appearance="simple"}
+The following should be performed from your base environment, not the `py311_env` created in Part 1. You can return to your base environment using `micromamba deactivate`.
+:::
 
-Use `conda` to create and activate a new environment called `test_env_2`
+### 1. Create and activate a new `micromamba` environment
+
+Use `micromamba` to create and activate a new environment called `mamba_test_2`.
 
 :::{.callout-tip collapse="true" appearance="minimal"}
 ## Answer
 ```bash
-conda create -n test_env_2 python=3.10 -y
-conda activate test_env_2
+micromamba create -n mamba_test_2 python=3.10 -y
+micromamba activate mamba_test_2
 ```
 :::
 
-#### 2. Install the pinned dependencies with conda
+### 2. Install the pinned dependencies with `micromamba`
 
-Install the same dependencies as before (`pandas` v1.5.0 and `numpy` < v2.0), but with `conda`.
+Install the same dependencies as before (`pandas` v1.5.0 and `numpy` < v2.0), but with `micromamba`.
 
 :::{.callout-tip collapse="true" appearance="minimal"}
 ## Answer
 ```bash
-conda install -y -c conda-forge "numpy<2.0" "pandas=1.5.0"
+micromamba install -y -c conda-forge "numpy<2.0" "pandas=1.5.0"
 ```
 :::
 
-#### 3. Run the test script:
+### 3. Run the test script
 
 ```bash
 python3 ./pt2_script.py
@@ -279,28 +420,43 @@ python3 ./pt2_script.py
 **Did the script work?**
 
 <div class="btn-group" role="group">
-  <input type="radio" class="btn-check" name="conda-radio2" id="conda2-yes" autocomplete="off">
-  <label class="btn btn-outline-primary" for="conda2-yes">Yes</label>
+  <input type="radio" class="btn-check" name="micromamba-radio2" id="micromamba2-yes" autocomplete="off">
+  <label class="btn btn-outline-primary" for="micromamba2-yes">Yes</label>
 
-  <input type="radio" class="btn-check" name="conda-radio2" id="conda2-no" autocomplete="off">
-  <label class="btn btn-outline-primary" for="conda2-no">No</label>
+  <input type="radio" class="btn-check" name="micromamba-radio2" id="micromamba2-no" autocomplete="off">
+  <label class="btn btn-outline-primary" for="micromamba2-no">No</label>
 </div>
 
-#### 4. Install scanpy with Conda
-Use conda to install `scanpy` and confirm `[Y]` / deny `[n]` the changes based on the summary.
+:::
+:::
+
+:::{.card .border-info .mb-3}
+:::{.card-header}
+## Part 3B: The disruption (`micromamba`)
+:::
+:::{.card-body}
+
+### 4. Install `scanpy` with `micromamba`
+
+Your co-worker is back and they want you to try installing `scanpy` again, but this time using `micromamba`.
+
+:::{.callout-tip appearance="simple"}
+Inspect the installation summary before confirming `[Y]` or denying `[n]` the installation.
+:::
 
 :::{.callout-tip collapse="true" appearance="minimal"}
 ## Answer
 ```bash
-conda install -c conda-forge -c bioconda scanpy
+micromamba install -c conda-forge -c bioconda scanpy
 ```
 :::
 
-<span class="text-primary"> Which did you choose - `Y` or `n`? Why?</span>
+**Did you confirm `[Y]` or deny `[n]` the installation? Why?**
 <div class="textbox textbox-editable" contenteditable="true"></div>
 
-#### 5. Run the test script:
-Try the test script one time after making your decision.
+### 5. Run the test script
+
+Try the test script one last time after making your decision about `scanpy`:
 
 ```bash
 python3 ./pt2_script.py
@@ -309,26 +465,26 @@ python3 ./pt2_script.py
 **Did the script work?**
 
 <div class="btn-group" role="group">
-  <input type="radio" class="btn-check" name="conda-radio3" id="conda3-yes" autocomplete="off">
-  <label class="btn btn-outline-primary" for="conda3-yes">Yes</label>
+  <input type="radio" class="btn-check" name="micromamba-radio3" id="micromamba3-yes" autocomplete="off">
+  <label class="btn btn-outline-primary" for="micromamba3-yes">Yes</label>
 
-  <input type="radio" class="btn-check" name="conda-radio3" id="conda3-no" autocomplete="off">
-  <label class="btn btn-outline-primary" for="conda3-no">No</label>
+  <input type="radio" class="btn-check" name="micromamba-radio3" id="micromamba3-no" autocomplete="off">
+  <label class="btn btn-outline-primary" for="micromamba3-no">No</label>
 </div>
 
 **Do you regret your decision?**
 
 <div class="btn-group" role="group">
-  <input type="radio" class="btn-check" name="conda-radio4" id="conda4-yes" autocomplete="off">
-  <label class="btn btn-outline-primary" for="conda4-yes">Yes</label>
+  <input type="radio" class="btn-check" name="micromamba-radio4" id="micromamba4-yes" autocomplete="off">
+  <label class="btn btn-outline-primary" for="micromamba4-yes">Yes</label>
 
-  <input type="radio" class="btn-check" name="conda-radio4" id="conda4-no" autocomplete="off">
-  <label class="btn btn-outline-primary" for="conda4-no">No</label>
+  <input type="radio" class="btn-check" name="micromamba-radio4" id="micromamba4-no" autocomplete="off">
+  <label class="btn btn-outline-primary" for="micromamba4-no">No</label>
 </div>
 
 :::{.callout-tip collapse="true" appearance="minimal"}
 ## Answer
-Conda warned us that installing `scanpy` would require updating to a new version of `pandas`. This allowed us to avoid silently breaking the `pandas v1.5.0` dependency of `pt2_script.py`.
+`micromamba` warned us that installing `scanpy` would require updating to a new version of `pandas`. This allowed us to avoid silently breaking the `pandas v1.5.0` dependency of `pt2_script.py`.
 :::
 
 :::

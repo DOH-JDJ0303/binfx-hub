@@ -1,0 +1,545 @@
+Sample	Isolate_Name	Subtype	Clade	Passage_History	Location	Host	Collection_Date
+EPI4379240	A/Bavaria/6493751/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Germany / Bavaria	Human	2025-02-03
+EPI4783970	A/Madagascar/03676/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Africa / Madagascar / Sofia	Human	2025-10-20
+EPI4304293	A/Madagascar/01078/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Africa / Madagascar / Analamanga	Human	2025-04-01
+EPI3629301	A/Madagascar/02845/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Africa / Madagascar / Haute Matsiatra	Human	2024-09-15
+EPI4386549	A/Spain/VC-CVA_PES-001907/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Europe / Spain / Valencian Community / Valencia	Human	2025-01-04
+EPI4190033	A/SWITZERLAND/UN-SNRCI-HUG-47088280/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Switzerland	Human	2025-01-27
+EPI4885469	A/NovaScotia/ET1108CP00062U/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / Canada / Nova Scotia	Human	2025-11-08
+EPI4384980	A/NovaScotia/NT0104CP00003S/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / Canada / Nova Scotia	Human	2025-04-01
+EPI4782132	A/California/SMCPHL-988/2025	A / H3N2	3C.2a1b.2a.2a.3b		North America / United States / California / San Mateo County	Human	2025-02-03
+EPI4245829	A/Vietnam/FP225035/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Vietnam / Tinh Quang Ninh	Human	2025-04-02
+EPI4245779	A/Vietnam/FP425102/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Vietnam / Thu Do Ha Noi	Human	2025-01-16
+EPI4245717	A/Vietnam/FP425001/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Vietnam / Thu Do Ha Noi	Human	2025-01-16
+EPI4245641	A/Vietnam/FP325105/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Vietnam / Tinh Lao Cai	Human	2025-03-14
+EPI3679555	A/Vietnam/PF124483/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Vietnam / Thanh Pho Hai Phong	Human	2024-11-04
+EPI3581440	A/Vietnam/PF224225/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Vietnam / Thanh Pho Hai Phong	Human	2024-06-18
+EPI3494836	A/Vietnam/PF124082/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Vietnam / Thanh Pho Hai Phong	Human	2024-03-31
+EPI4637373	A/Bangkok/AST-021/2023	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Thailand	Human	2023-07-26
+EPI3351844	A/Douala/23V-8444/2023	A / H3N2	3C.2a1b.2a.2a.3a.1		Africa / Cameroon / Littoral Province	Human	2023-09-14
+EPI4900202	A/France/BRE-IPP07757/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K	original	Europe / France / Bretagne	Human	2025-12-01
+EPI4291751	A/France/HDF-RELAB-IPP04212/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / France / Hauts-de-France	Human	2025-04-03
+EPI4291413	A/France/BFC-RELAB-IPP04052/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / France / Bourgogne-Franche-Comte	Human	2025-03-27
+EPI4843303	A/Kenya/MSA10078/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Africa / Kenya / Nairobi Area	Human	2025-08-06
+EPI4841589	A/Kenya/NAK13453/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K		Africa / Kenya / Nairobi Area	Human	2025-11-12
+EPI4782513	A/Kenya/IRH16237/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Africa / Kenya / Nairobi Area	Human	2025-10-07
+EPI3012195	A/Kenya/5192/2023	A / H3N2	3C.2a1b.2a.2a.3a.1		Africa / Kenya / North Eastern Province / Daadab	Human	2023-10-23
+EPI2898111	A/Michigan/UM-L371447809/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Michigan	Human	2023-11-19
+EPI2897727	A/Michigan/UM-L371576659/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Michigan	Human	2023-11-25
+EPI2897279	A/Michigan/UM-L370612818/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Michigan	Human	2023-10-26
+EPI2896536	A/Michigan/UM-10054685345/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Michigan	Human	2023-11-30
+EPI2895842	A/Michigan/UM-L372221815/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Michigan	Human	2023-12-10
+EPI4238330	A/Galicia/SCQ/147629/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Spain / A Coru?a	Human	2025-03-10
+EPI4210020	A/Galicia/SCQ/144934/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Spain / A Coru?a	Human	2025-03-05
+EPI4561530	A/Mexico City/INER-INF_378/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Mexico	Human	2025-01-13
+EPI4561184	A/Mexico City/INER-INF_333/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Mexico	Human	2024-12-23
+EPI4561164	A/Mexico City/INER-INF_330/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Mexico	Human	2024-12-20
+EPI4561108	A/Mexico City/INER-INF_323/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Mexico	Human	2024-12-17
+EPI4062420	A/Mexico City/INER-INF_249/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Mexico / Federal District	Human	2024-11-14
+EPI4319172	A/Lisboa/309/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Portugal	Human	2025-01-07
+EPI4232419	A/Lisboa/99/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Portugal	Human	2025-02-14
+EPI2874529	A/Michigan/CEIRS-0347296/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Michigan	Human	2023-03-16
+EPI2874463	A/Michigan/CEIRS-9755705/2023	A / H3N2	3C.2a1b.2a.2b	Original	North America / United States / Michigan	Human	2023-02-08
+EPI2920018	A/SAO PAULO/59646/2022	A / H3N2	3C.2a1b.2a.2b	Original	South America / Brazil / Estado de Sao Paulo / Ribeirao Preto	Human	2022-09-27
+EPI4624325	A/South Africa/PET36397/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original�	Africa / South Africa / Gauteng	Human	2025-04-10
+EPI4624300	A/South Africa/PET36350/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original�	Africa / South Africa / Gauteng	Human	2025-04-07
+EPI4623327	A/South Africa/PET37157/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original�	Africa / South Africa / Gauteng	Human	2025-05-19
+EPI4363567	A/Ukraine/3657/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Europe / Ukraine / Kyiv region	Human	2025-02-24
+EPI4750737	A/British_Columbia/PHL-2466/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Canada / British Columbia	Human	2025-08-01
+EPI4390092	A/Alagoas/975/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado de Alagoas / Maceio	Human	2025-03-21
+EPI3398669	A/Alagoas/8016/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado de Alagoas / Maceio	Human	2024-05-24
+EPI3215229	A/Sao Paulo/2683/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado de Sao Paulo / Sao Paulo	Human	2024-02-16
+EPI4809210	A/Oman/CPHL_7253093/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Oman / NORTH BATINAH	Human	2025-05-22
+EPI4809170	A/Oman/CPHL_7253078/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Oman / SOUTH SHARQIYAH	Human	2025-05-21
+EPI3735976	A/Oman/CPHL_52422154/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Oman / NORTH SHARQIYAH	Human	2024-08-04
+EPI4772985	A/South Australia/2529502694/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Oceania / Australia / South Australia	Human	2025-10-22
+EPI4678327	A/South Australia/2524807354/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Oceania / Australia / South Australia	Human	2025-09-05
+EPI4581625	A/South Australia/2509112466/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Oceania / Australia / South Australia	Human	2025-04-01
+EPI4722517	A/Distrito Federal/2581327601/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Distrito Federal / Santa Maria	Human	2025-08-18
+EPI4465397	A/Distrito Federal/2511141101/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Distrito Federal	Human	2025-03-18
+EPI4320656	A/Distrito Federal/240802002328/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Distrito Federal / Plano Piloto	Human	2024-10-17
+EPI4320489	A/Distrito Federal/2442015301/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Distrito Federal / Plano Piloto	Human	2024-10-08
+EPI4320297	A/Distrito Federal/2435715302/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Distrito Federal / Paranoa	Human	2024-09-24
+EPI4320273	A/Distrito Federal/240802002201/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Distrito Federal / Plano Piloto	Human	2024-09-24
+EPI4373732	A/Galicia/GA-CHUAC-405/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Spain / Galicia / La Coruna	Human	2025-05-02
+EPI4840270	A/Laos/00925-1989/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		"Asia / Lao, People's Democratic Republic / Khoueng Attapu"	Human	2025-09-29
+EPI4570755	A/Laos/00819-2942/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Laos	"Asia / Lao, People's Democratic Republic / Khoueng Xiangkhoang / human"	Human	2025-03-12
+EPI4501279	A/Laos/00820-2540/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		"Asia / Lao, People's Democratic Republic / Khoueng Louangnamtha"	Human	2025-04-22
+EPI2958310	A/Hubei-Wuhan/73702/2022	A / H3N2	3C.2a1b.2a.1a		Asia / China / Hubei Province / Hubei	Human	2022-07-03
+EPI3603279	A/Hawaii-TAMC/327/2024	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / United States / Hawaii / Honolulu County	Human	2024-05-28
+EPI3348772	A/Hawaii-TAMC/245/2024	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / United States / Hawaii / Honolulu County / Recent travel to New York within last 21 days	Human	2024-01-16
+EPI3342967	A/Hawaii-TAMC/244/2024	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / United States / Hawaii / Honolulu County	Human	2024-01-12
+EPI3255595	A/Hawaii-TAMC/228/2023	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / United States / Hawaii / Honolulu County	Human	2023-12-24
+EPI2767248	A/Bhutan/FLU-BTD-01352/2022	A / H3N2	3C.2a1b.2a.2a.3	Original	Asia / Bhutan / Punakha	Human	2022-11-21
+EPI3844455	A/Malaysia/TIDREC_KBR-AUFI887/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Malaysia / Kelantan	Human	2024-09-18
+EPI4805964	A/Coban/FLU-379/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / Guatemala / Departamento de Alta Verapaz	Human	2025-10-15
+EPI4470505	A/Oman/CPHL_7251923/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Oman / NORTH BATINAH	Human	2025-04-16
+EPI4212804	A/Oman/CPHL_725768/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Oman / AL WUSTA	Human	2025-02-07
+EPI4212716	A/Oman/CPHL_725676/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Oman / MUSANDAM	Human	2025-02-01
+EPI3108795	A/Oman/CPHL_5243374/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Oman / DHOFAR	Human	2024-01-26
+EPI3108716	A/Oman/CPHL_5241433/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Oman / MUSCAT	Human	2024-01-13
+EPI1321392	A/Norway/3288/2018	A / H3	3C.2a1b.2	Clinical Specimen	Europe / Norway / Oslo	Human	2018-10-05
+EPI2945363	A/Norway/00090/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Clinical Specimen	Europe / Norway / Innlandet	Human	2024-01-03
+EPI4215749	A/Norway/03470/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Clinical Specimen	Europe / Norway / Agder	Human	2025-03-01
+EPI3250112	A/Malaysia/IMR-SARI0557/2024  	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Malaysia / Kelantan	Human	2024-03-04
+EPI4409964	A/South Africa/NHLS-UCT-CERI-C067959/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Africa / South Africa / Province of the Western Cape / Cape Town	Human	2025-04-04
+EPI3750103	A/Jeonbuk/4055/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	original	"Asia / Korea, Republic of"	Human	2024-07-29
+EPI2454946	A/Seoul/761/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	original	"Asia / Korea, Republic of"	Human	2023-02-21
+EPI2715257	A/Nepal/432/2023	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Nepal / Kirtipur 	Human	2023-03-22
+EPI4785679	A/Vietnam/IC.00447/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Vietnam / DAK LAK	Human	2025-07-23
+EPI2508499	A/Bolzano/19/2023	A / H3N2	3C.2a1b.2a.2b		Europe / Italy / Trentino-Alto Adige / Province of Bolzano-Bozen	Human	2023-01-12
+EPI2437503	A/Bolzano/3/2023	A / H3N2	3C.2a1b.2a.2a.1		Europe / Italy / Trentino-Alto Adige / Province of Bolzano-Bozen	Human	2023-01-25
+EPI3596231	A/Costa_Rica/INC-0858-829154/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Costa Rica / Provincia de San Jose / Desamparados	Human	2024-05-05
+EPI4866920	A/Costa_Rica/INC-1833-881757/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Costa Rica / Provincia de Puntarenas / Coto Brus	Human	2025-11-11
+EPI4557675	A/Costa_Rica/INC-1337-856543/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Costa Rica / Provincia de Cartago / Cartago	Human	2025-03-08
+EPI4332639	A/Costa_Rica/INC-1025-849695/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Costa Rica / Provincia de Alajuela / Alajuela	Human	2024-12-10
+EPI4752305	A/Uganda/UVRI_KSW8415_2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Africa / Uganda / Kampala	Human	2025-08-12
+EPI4937847	A/Uganda/UVRI_TOR4329/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Africa / Uganda / Tororo District	Human	2025-09-03
+EPI2540264	A/Jiangsu-wuxi/0729/2022	A / H3N2	3C.2a1b.2a.1a	C2	Asia / China / Jiangsu Provice / Wuxi	Human	2022-07-12
+EPI4528472	A/South Africa/NHLS-SU-CERI-C069370/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Africa / South Africa / Province of the Western Cape / Cape Town	Human	2025-06-12
+EPI4416181	A/South Africa/PATH-CERI-C068465/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Africa / South Africa / Province of the Western Cape / Hermanus	Human	2025-05-03
+EPI4411419	A/South Africa/PATH-CERI-C068167/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Africa / South Africa / Province of the Western Cape / Cape Town	Human	2025-04-22
+EPI4401047	A/South Africa/NHLS-SU-CERI-C067984/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Africa / South Africa / Province of the Western Cape	Human	2025-04-20
+EPI3330529	A/Arizona/ASU107748/2024	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / United States / Arizona / Maricopa County	Human	2024-03-14
+EPI2846716	A/shandongrencheng/11172/2022(H3)	A / H3N2	3C.2a1b.2a.1a	c1	Asia / China / Shandong Province	Human	2022-09-14
+EPI4751244	A/Peru/LIM-UPCH-5112/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		South America / Peru / Departamento de Lima	Human	2025-08-26
+EPI2587971	A/Peru/UPCH_3787/2022	A / H3N2	3C.2a1b.2a.2a.3		South America	Human	2022-06-03
+EPI3501027	A/Bangladesh/icddrb-2240410032/2024	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Bangladesh / Jashore	Human	2024-04-23
+EPI3500991	A/Bangladesh/icddrb-1240412010/2024	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Bangladesh / Barishal	Human	2024-04-18
+EPI4436587	A/ABUDHABI/UAE/0024921/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / United Arab Emirates	Human	2024-12-30
+EPI4436244	A/ABUDHABI/UAE/0022230/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / United Arab Emirates	Human	2024-11-24
+EPI4435610	A/ABUDHABI/UAE/0018056/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / United Arab Emirates	Human	2024-10-13
+EPI4435037	A/ABUDHABI/UAE/0002049/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / United Arab Emirates	Human	2025-01-27
+EPI4434672	A/ABUDHABI/UAE/0000053/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / United Arab Emirates	Human	2025-01-02
+EPI4422855	A/ABUDHABI/UAE/0003961/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / United Arab Emirates	Human	2025-02-17
+EPI4422635	A/ABUDHABI/UAE/0004813/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / United Arab Emirates	Human	2025-02-18
+EPI4422563	A/ABUDHABI/UAE/0004807/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / United Arab Emirates	Human	2025-02-17
+EPI4422517	A/ABUDHABI/UAE/0004539/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / United Arab Emirates	Human	2025-02-21
+EPI3181367	A/ABUDHABI/UAE/0001435/2023	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / United Arab Emirates	Human	2023-02-08
+EPI2922525	A/ABUDHABI/UAE/0008533/2022	A / H3N2	3C.2a1b.2a.2b		Asia / United Arab Emirates	Human	2022-12-05
+EPI2585746	A/ABUDHABI/UAE/0003309/2022	A / H3N2	3C.2a1b.2a.2a.3		Asia / United Arab Emirates	Human	2022-09-27
+EPI2500297	A/ABUDHABI/UAE/4002462/2022	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / United Arab Emirates	Human	2022-06-09
+EPI2500293	A/ABUDHABI/UAE/0000479/2022	A / H3N2	3C.2a1b.2a.2b		Asia / United Arab Emirates	Human	2022-07-06
+EPI4632557	A/Guatemala/Q000249/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / Guatemala / Departamento de Quetzaltenango / Coatepeque	Human	2025-06-20
+EPI4876994	A/England/01875679/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / United Kingdom / CUMBRIA	Human	2025-11-27
+EPI4876755	A/England/01875752/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K	original	Europe / United Kingdom / WISBECH	Human	2025-11-27
+EPI4791291	A/England/01854876/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / United Kingdom / OXFORD	Human	2025-10-21
+EPI4298432	A/England/1360730/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / United Kingdom / LONDON	Human	2025-03-23
+EPI3767129	A/England/4960585/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / United Kingdom	Human	2024-12-03
+EPI3142656	A/England/240760798/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / United Kingdom / MANCHESTER	Human	2024-01-27
+EPI2962088	A/England/235180644/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / United Kingdom / SHEFFIELD	Human	2023-12-22
+EPI2960954	A/England/235190206/2023	A / H3N2	3C.2a1b.2a.2a.3b	original	Europe / United Kingdom / LEEDS	Human	2023-12-21
+EPI2935457	A/England/235090198/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / United Kingdom / LEEDS	Human	2023-12-13
+EPI2847774	A/England/234740245/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / United Kingdom / DONCASTER	Human	2023-11-21
+EPI2815639	A/England/234600199/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / United Kingdom / DUDLEY	Human	2023-11-09
+EPI2794853	A/England/234000309/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / United Kingdom / DONCASTER	Human	2023-09-28
+EPI4304669	A/Asturias/232460582/2024	A / H3N2	3C.2a1b.2a.2a.3a.1		Europe / Spain / Principality of Asturias / Asturias	Human	2024-07-30
+EPI4861690	A/Bahrain/9835/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K		Asia / Bahrain	Human	2025-11-13
+EPI4860225	A/Bahrain/0992/2025	A / H3N2	3C.2a1b.2a.2a.3a		Asia / Bahrain	Human	2025-10-28
+EPI4774219	A/Bahrain/3296/2025	A / H3N2	3C.2a1b.2a.2a.3a		Asia / Bahrain	Human	2025-08-14
+EPI4718398	A/Bahrain/5393/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Bahrain	Human	2025-05-12
+EPI4385707	A/Bahrain/0382/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Bahrain	Human	2025-01-08
+EPI4235872	A/Belgium/S3707/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / Belgium	Human	2025-03-03
+EPI4419345	A/Coahuila/IBT_IMSS_01040548CIBIN/2022	A / H3N2	3C.2a1b.2a.2a.3	Original	North America / Mexico	Human	2022-12-02
+EPI3504673	A/Bahia/293495829/2024	A / H3N2	3C.2a1b.2a.2a.3a.1		South America / Brazil / Estado da Bahia / Alagoinhas	Human	2024-02-27
+EPI2185845	A/Bahia/090-292041806/2021	A / H3N2	3C.2a1b.2a.2a.3		South America / Brazil / Estado da Bahia / SERRINHA	Human	2021-12-30
+EPI2389518	A/Michigan/HFHSL360185597/2022	A / H3N2	3C.2a1b.2a.2b	ORI	North America / United States	Human	2022-12-08
+EPI3861947	A/New York/PX12328/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / New York / New York	Human	2024-12-05
+EPI3799954	A/New York/PX10733/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / New York / Queens	Human	2024-09-17
+EPI3602355	A/New York/PV154035/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / New York / New York	Human	2024-08-08
+EPI3554017	A/New York/PV101050/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / New York / New York	Human	2024-01-08
+EPI3553772	A/New York/PV150821/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / New York / New York	Human	2024-02-19
+EPI2435845	A/New York/PV81192/2022	A / H3N2	3C.2a1b.2a.2b	Original	North America / United States / New York / New York	Human	2022-11-27
+EPI2435837	A/New York/PV81191/2022	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / New York / New York	Human	2022-11-27
+EPI2435195	A/New York/PV63080/2022	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / New York / New York	Human	2022-06-13
+EPI2435084	A/New York/PV63033/2022	A / H3N2	3C.2a1b.2a.2a.1	Original	North America / United States / New York / The Bronx	Human	2022-05-29
+EPI2434373	A/New York/PV60713/2022	A / H3N2	3C.2a1b.2a.2a.1a	Original	North America / United States / New York / New York	Human	2022-04-25
+EPI2432276	A/New York/PV03824/2019	A / H3N2	3C.2a1b.2	Original	North America / United States / New York / New York	Human	2019-04
+EPI2238943	A/New York/PV60728/2022	A / H3N2	3C.2a1b.2a.2a.1	Original	North America / United States / New York / Suffolk	Human	2022-04-24
+EPI2219806	A/New York City/PV02895/2019	A / H3N2	3C.2a1b.2b	Original	North America / United States / New York	Human	2019-02-08
+EPI2057808	A/New York/PV42770/2022	A / H3N2	3C.2a1b.2a.2a.3	Original	North America / United States / New York / New York	Human	2022-04-02
+EPI4698923	A/Sao Paulo/LEIAL6200/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado de Sao Paulo / Sao Paulo	Human	2025-07-21
+EPI3810485	A/Brazil/SP-LEIAL4033/2024	A / H3N2	3C.2a1b.2a.2a.3a.1		South America / Brazil / Estado de Sao Paulo / Sao Paulo	Human	2024-12-06
+EPI3644157	A/Sao Paulo/IAL/357893264/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado de Sao Paulo / Sao Paulo	Human	2024-08-12
+EPI2586144	A/Peru/CNR-HCL023026614401/2022	A / H3N2	3C.2a1b.2a.2a.3		South America / Peru / Departamento de Lima	Human	2022-11-19
+EPI4913152	A/France/ARA-HCL025194779301/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Auvergne-Rhone-Alpes	Human	2025-12-03
+EPI4743841	A/France/ARA-RELAB-HCL025153843201/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Auvergne-Rhone-Alpes	Human	2025-09-18
+EPI4723260	A/France/NAQ-RELAB-HCL025144128501/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Nouvelle-Aquitaine	Human	2025-09-02
+EPI4648234	A/France/ARA-HCL025131788401/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Auvergne-Rhone-Alpes	Human	2025-02-20
+EPI4537509	A/France/ARA-HCL021212645001/2021	A / H3N2	3C.2a1b.2a.2a.1	Original	Europe / France / Auvergne-Rhone-Alpes	Human	2021-11-30
+EPI4334567	A/France/ARA-RELAB-HCL025068424901/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Auvergne-Rhone-Alpes	Human	2025-04-10
+EPI4289249	A/France/ARA-HCL022213790301/2022	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Auvergne-Rhone-Alpes	Human	2022-12-21
+EPI4214727	A/France/PAC-RELAB-HCL025038928301/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Provence-Alpes-Cote d'Azur	Human	2025-02-12
+EPI4210807	A/France/OCC-HCL025029269601/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Occitanie	Human	2025-02-12
+EPI4122019	A/France/PAC-RELAB-HCL025039386301/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Provence-Alpes-Cote d'Azur	Human	2025-02-28
+EPI3744723	A/France/ARA-RELAB-HCL024195687601/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Auvergne-Rhone-Alpes	Human	2024-12-06
+EPI3626603	A/France/ARA-RELAB-HCL024162110901/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Auvergne-Rhone-Alpes	Human	2024-10-10
+EPI3600292	A/France/ARA-HCL024121683701/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Auvergne-Rhone-Alpes	Human	2024-08-01
+EPI3213592	A/France/OCC-RELAB-HCL024031760201/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Occitanie	Human	2024-02-14
+EPI3152803	A/France/NAQ-RELAB-HCL024023386901/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Nouvelle-Aquitaine	Human	2024-01-29
+EPI3059932	A/France/ARA-HCL024016681401/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Auvergne-Rhone-Alpes	Human	2024-01-29
+EPI3015822	A/France/ARA-RELAB-HCL024015536501/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / France / Auvergne-Rhone-Alpes	Human	2024-01-20
+EPI2848717	A/France/ARA-RELAB-HCL023184404101/2023	A / H3N2	3C.2a1b.2a.2a.3a.1		Europe / France / Auvergne-Rhone-Alpes	Human	2023-11-13
+EPI2848584	A/France/ARA-RELAB-HCL023182313901/2023	A / H3N2	unassigned		Europe / France / Auvergne-Rhone-Alpes	Human	2023-11-08
+EPI2100276	A/Kyiv/382/2021	A / H3N2	3C.2a1b.2a.2a.2		Europe / Ukraine / Kiev Oblast / Europe / Ukraine / Kyiv	Human	2021-12-12
+EPI2241238	A/Saudi Arabia/KFMC-131/2019	A / H3N2	unassigned		Asia / Saudi Arabia / Mintaqat ar Riyad	Human	2019-12-01
+EPI4547806	A/South Africa/NICD-R05415/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Africa / South Africa / KwaZulu Natal	Human	2025-06-13
+EPI4453175	A/South Africa/NICD-R05367/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Africa / South Africa / Gauteng	Human	2025-06-13
+EPI4452785	A/South Africa/NICD-R05009/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Africa / South Africa / Province of the Western Cape	Human	2025-06-02
+EPI4246464	A/South Africa/R03202/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Africa / South Africa / Gauteng	Human	2025-03-24
+EPI3590391	A/Bangladesh/icddrb-1220608023/2022	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Bangladesh / Khulna Division / Asia	Human	2022-06-23
+EPI1986333	A/Denmark/47/2022	A / H3N2	3C.2a1b.2a.2		Europe / Denmark	Human	2022-01-20
+EPI4788204	A/Denmark/3384/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Denmark	Human	2025-10-13
+EPI4524333	A/Denmark/2858/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Denmark	Human	2025-04-10
+EPI4524325	A/Denmark/2872/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Denmark	Human	2025-04-12
+EPI4374148	A/Denmark/2458/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Denmark	Human	2025-03-24
+EPI4373966	A/Denmark/1308/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Denmark	Human	2025-02-12
+EPI4373663	A/Denmark/1296/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Denmark	Human	2025-02-12
+EPI4372857	A/Denmark/2198/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Denmark	Human	2025-03-11
+EPI3626284	A/Denmark/2314/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Denmark	Human	2024-09-13
+EPI4824043	A/Punta Arenas/76956/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		South America / Chile	Human	2025-09-13
+EPI4823676	A/Santiago/75189/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		South America / Chile	Human	2025-09-09
+EPI4823456	A/Santiago/72273/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		South America / Chile	Human	2025-08-29
+EPI1973371	A/Lisboa/5/2021	A / H3N2	3C.2a1b.2a.2	Original	Europe / Portugal / Distrito de Lisboa	Human	2021-12-03
+EPI4234347	A/Baltimore/JH-1020/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / United States	Human	2025
+EPI3729266	A/Baltimore/JH-1273/2024	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / United States	Human	2024
+EPI2353149	A/Baltimore/JH-0616/2022	A / H3N2	3C.2a1b.2a.2b		North America / United States	Human	2022-10-24
+EPI2217021	A/Baltimore/JH-0351/2022	A / H3N2	3C.2a1b.2a.2b		North America / United States	Human	2022-10-06
+EPI2216416	A/Baltimore/JH-0472/2022	A / H3N2	3C.2a1b.2a.2b		North America / United States	Human	2022-10-22
+EPI2032395	A/Baltimore/JH-087/2021	A / H3N2	3C.2a1b.2a.2a		North America / United States	Human	2021-12-20
+EPI3930705	A/India/Del-IGSQ738/2021	A / H3N2	3C.2a1b.2a.2a	Original	Asia / India / National Capital Territory of Delhi	Human	2021-03-22
+EPI3930601	A/India/Thi-NIV239222/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / India / Thiruvarur	Human	2023-02-27
+EPI3930377	A/India/Del-IGSQ492/2022	A / H3N2	3C.2a1b.2a.2a.3b	Original	Asia / India / National Capital Territory of Delhi	Human	2022-10-11
+EPI1885058	A/India/Pun-NIV327745/2021 Jul	A / H3N2	3C.2a1b.2a.2a.3	Original	Asia / India / Maharashtra / Pune	Human	2021-07-05
+EPI1885055	A/India/Pun-NIV327049/2021 Jul	A / H3N2	3C.2a1b.2a.2a	Original	Asia / India / Maharashtra / Pune	Human	2021-07-03
+EPI1885054	A/India/Pun-NIV326980/2021 Jul	A / H3N2	3C.2a1b.2a.2	Original	Asia / India / Maharashtra / Pune	Human	2021-07-03
+EPI1885029	A/India/Pun-NIV301132/2021 Apr	A / H3N2	3C.2a1b.2a.2c	MDCK P3	Asia / India / Maharashtra / Pune	Human	2021-04-11
+EPI1868862	A/India/Pun-NIV313370/2021 May	A / H3N2	3C.2a1b.2a.2	Original	Asia / India / Maharashtra / Pune	Human	2021-05-17
+EPI4731419	A/Cartagena/UC-25_0104/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		South America / Colombia / Departamento de Bolivar / Cartagena de Indias	Human	2025-07-11
+EPI4749248	A/South Australia/2527513504/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Oceania / Australia / South Australia	Human	2025-10-02
+EPI2298233	A/Ankara/GED-14020_7/2022	A / H3N2	unassigned		Asia / Turkey / Ankara Province	Human	2022-12-20
+EPI4813060	A/Thessaloniki/834/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K	cs	Europe / Greece / Nomos Rodopis	Human	2025-10-23
+EPI4884998	A/Colombia/ANT-LDSP7/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		South America / Colombia / Departamento de Antioquia	Human	2025-11-12
+EPI4741359	A/Colombia/ANT-LDSP16273/2025	A / H3N2	3C.2a1b.2a.2a.3a		South America / Colombia / Departamento de Antioquia / Medellin	Human	2025-07-14
+EPI1806855	A/Mexico/INCMNSZ/BMQ558/Dec2019/H3N2	A / H3N2	3C.2a1b.2b	Original	North America / Mexico / Federal District	Human	2019-12-16
+EPI2907812	A/Romania/3420/2023	A / H3N2	unassigned		Europe / Romania / Bucharest	Human	2023-12-18
+EPI4759370	A/INDIA/ARI_25_401/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / India / PUDUCHERRY	Human	2025-08-04
+EPI4515074	A/South Africa/NHLS-SU-CERI-C069319/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Africa / South Africa / Province of the Western Cape / Cape Town	Human	2025-05-15
+EPI4503790	A/South Africa/NHLS-UCT-CERI-C069250/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Africa / South Africa / Province of the Western Cape	Human	2025-05-08
+EPI4909174	A/Ontario/PHL202500861/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / Canada / Ontario	Human	2025-11-10
+EPI4908950	A/Ontario/PHL202500823/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / Canada / Ontario	Human	2025-10-31
+EPI4908486	A/Ontario/PHL202500676/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K		North America / Canada / Ontario	Human	2025-09-18
+EPI4907882	A/T�rkiye/HSGM-S2425-P58/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Turkey / Ankara Province	Human	2025-01-15
+EPI4594060	A/ABUDHABI/UAE/0004870/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / United Arab Emirates	Human	2025-03-03
+EPI4673381	A/Queensland/IN001832/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Oceania / Australia / Queensland	Human	2025-06-26
+EPI4455049	A/Queensland/IN001272/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Oceania / Australia / Queensland	Human	2025-04-03
+EPI3612589	A/Queensland/IN000225/2024	A / H3N2	3C.2a1b.2a.2a.3a.1		Oceania / Australia / Queensland	Human	2024-07-26
+EPI3612191	A/Queensland/IN000154/2024	A / H3N2	3C.2a1b.2a.2a.3a.1		Oceania / Australia / Queensland	Human	2024-06-11
+EPI4191427	A/PaisVasco/37709629/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Spain / Basque Country	Human	2025-02-06
+EPI4115464	A/PaisVasco/72521235/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Spain / Basque Country	Human	2025-02-14
+EPI4052448	A/PaisVasco/47136947/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Spain / Basque Country	Human	2025-01-24
+EPI4017034	A/PaisVasco/70176084/2025	A / H3N2	3C.2a1b.2a.2a.3a	Original	Europe / Spain / Basque Country	Human	2025-01-19
+EPI4744197	A/Peru/LIM-INS-646/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Peru / LIMA	Human	2025-08-25
+EPI4356937	A/Peru/LAM-INS-517/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Peru / Departamento de Lambayeque / Chiclayo	Human	2025-01-09
+EPI4356905	A/Peru/PIU-INS-513/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Peru / Departamento de Piura / Sullana	Human	2024-12-14
+EPI3628486	A/Peru/LIM-INS-109/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Peru / Departamento de Lima / Lima	Human	2024-03-12
+EPI4624393	A/Taiwan/C22085/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Taiwan	Human	2025-05-21
+EPI4522546	A/Ontario/908/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Canada / Ontario	Human	2025-03-03
+EPI4517869	A/Ontario/880/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Canada / Ontario	Human	2025-02-27
+EPI4510115	A/Ontario/714/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Canada / Ontario	Human	2025-01-28
+EPI4507557	A/Ontario/759/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Canada / Ontario	Human	2025-01-30
+EPI4500015	A/Ontario/122/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Canada / Ontario	Human	2025-01-14
+EPI3031401	A/Ontario/024/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Canada / Ontario	Human	2024-01-04
+EPI4494352	A/Alberta/24/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Canada / Alberta	Human	2025-01-14
+EPI4506984	A/Quebec/178/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Canada / Quebec	Human	2025-02-05
+EPI4506519	A/British_Columbia/262/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / Canada / British Columbia	Human	2025-02-10
+EPI3506162	A/Santiago/40356/2024	A / H3N2	3C.2a1b.2a.2a.3a.1		South America / Chile / Region Metropolitana de Santiago	Human	2024-05-19
+EPI1505388	A/Concepcion/50561/2019	A / H3N2	3C.2a1b.2	Original	South America / Chile / Concepcion	Human	2019-05-22
+EPI4255105	A/Luxembourg/LNS6698663/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Europe / Luxembourg	Human	2025-02-27
+EPI4590410	A/Valencia/CSISP-11_0950/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Direct sequencing	Europe / Spain / Valencian Community / Valencia	Human	2025-04-15
+EPI2880268	A/Belgium/S0524/2023	A / H3N2	3C.2a1b.2a.2	Original	Europe / Belgium	Human	2023-01-13
+EPI2701019	A/England/233000524/2023	A / H3N2	3C.2a1b.2a.2a.3b	original	Europe / United Kingdom / MANCHESTER	Human	2023-07-10
+EPI2305493	A/England/224780608/2022	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / United Kingdom / BUCKHURST HILL	Human	2022-11-22
+EPI2287820	A/England/224660802/2022	A / H3N2	3C.2a1b.2a.2b	original	Europe / United Kingdom / OXON	Human	2022-11-16
+EPI1963830	A/England/203680658/2020	A / H3N2	3C.2a1b.2a.2	original	Europe / United Kingdom / CAMBRIDGE	Human	2020-09-01
+EPI1962330	A/England/214720679/2021	A / H3N2	3C.2a1b.2a.2a	original	Europe / United Kingdom / LEEDS	Human	2021-11-19
+EPI1924480	A/England/211640706/2021	A / H3N2	3C.2a1b.2a.2		Europe / United Kingdom / BIRMINGHAM	Human	2021-04-18
+EPI2865458	A/Yunnan-Wenshan/1591/2022	A / H3N2	3C.2a1b.2a.1a	C1	Asia / China / Yunnan	Human	2022-07-11
+EPI2864466	A/Yunnan-Mengzi/1162/2019	A / H3N2	3C.2a1b.2	C1	Asia / China / Yunnan	Human	2019-02-19
+EPI4762957	A/Ghana/FS-25-7431/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Africa / Ghana / Greater Accra	Human	2025-09-29
+EPI4721162	A/Ghana/FS-25-5051/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Africa / Ghana / Cebtral Region	Human	2025-07-09
+EPI4495698	A/Ghana/FS-25-4312/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Africa / Ghana / Volta Region	Human	2025-06-27
+EPI3197217	A/Ghana/FS-24-1740/2024	A / H3N2	unassigned		Africa / Ghana / Greater Accra Region	Human	2024-03-28
+EPI4390892	A/Malaysia/IMR-SARI1132/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Malaysia / Negeri Sembilan	Human	2025-05-04
+EPI4677963	A/Malaysia/IMR/SARI/2046/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Malaysia / Kelantan	Human	2025-08-10
+EPI4390916	A/Malaysia/IMR/SARI/1203/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Malaysia / Kelantan	Human	2025-05-11
+EPI4906408	A/Pakistan/NIC/NIH/2706/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Pakistan / Islamabad Capital Territory	Human	2025-12-11
+EPI3497338	A/Pakistan/ICT/334/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Pakistan / Islamabad Capital Territory	Human	2024-02-20
+EPI2922087	A/Pakistan/AHF-NIH/KPK/025/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Pakistan / North-West Frontier Province	Human	2023-12-26
+EPI2922071	A/Pakistan/AHF-NIH/KPK/023/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Pakistan / North-West Frontier Province	Human	2023-12-26
+EPI2505319	A/Pakistan/NIH-ICT-905/2023	A / H3N2	3C.2a1b.2a.2a.3b	Original	Asia / Pakistan / Islamabad Capital Territory	Human	2023-02-14
+EPI4321734	A/Galicia/52497935/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Europe / Spain / Galicia / Ourense / Ourense	Human	2025-03-10
+EPI4322662	A/Galicia/36499341/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Europe / Spain / Galicia / Pontevedra / Vigo	Human	2025-03-29
+EPI4487611	A/Mexico/QUE_InDRE_F2204/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / Mexico / Queretaro	Human	2025-03-16
+EPI4399532	A/Mexico/NLE_InDRE_821/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / Mexico / Nuevo Leon	Human	2025-01-23
+EPI4399297	A/Mexico/SON_InDRE_426/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / Mexico / Sonora	Human	2025-01-07
+EPI4173316	A/Mexico/SLP_InDRE_188/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / Mexico / San Luis Potosi	Human	2025-01-02
+EPI4433825	A/Smolensk/CRIE/237/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Europe / Russian Federation / Smolensk Oblast	Human	2025-01-27
+EPI1956612	A/Kursk/CRIE/98/2021	A / H3N2	3C.2a1b.2a.2a.2		Europe / Russian Federation / Kursk Oblast	Human	2021-11-29
+EPI4204794	A/Netherlands/10843/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Netherlands	Human	2025-03-15
+EPI1987892	A/Netherlands/10072/2022	A / H3N2	3C.2a1b.2a.2a	Original	Europe / Netherlands	Human	2022-02-12
+EPI4591723	A/French Guiana/909/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		South America / French Guiana / Saint-Laurent du Maroni	Human	2025-07-01
+EPI4235011	A/Guadeloupe/588/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		North America / Guadeloupe / Petit Bourg	Human	2025-02-04
+EPI2149298	A/Uruguay/1848/2022	A / H3N2	3C.2a1b.2a.2a.3	original	South America / Uruguay / Departamento de Montevideo	Human	2022-04-25
+EPI1970634	A/South Africa/R15449/2021	A / H3N2	3C.2a1b.2a.2c	MDCK1/SIAT1	Africa / South Africa	Human	2021-10-21
+EPI1981069	A/Israel/R-6982/2021	A / H3N2	3C.2a1b.2a.2	Px/SIAT1	Asia / Israel	Human	2021-09-12
+EPI2721528	A/Cameroon/1742/2023	A / H3N2	3C.2a1b.2a.2a.3	SIAT1	Africa / Cameroon	Human	2023-02-17
+EPI1889254	A/Norway/16606/2021	A / H3N2	3C.2a1b.2a.2a	cs	Europe / Norway	Human	2021-08-07
+EPI1975961	A/Iran/Ab29A/10/2021	A / H3N2	3C.2a1b.2a.2a.1	SIAT5/SIAT1	"Asia / Iran, Islamic Republic of"	Human	2021-11-18
+EPI2821605	A/Qatar/10-VI-23-0095639/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	cs	Asia / Qatar	Human	2023-09-18
+EPI1889269	A/Qatar/16-VI-21-3950368/2021	A / H3N2	3C.2a1b.2a.2c	cs	Asia / Qatar	Human	2021-08-10
+EPI1985564	A/Belgium/H0004/2022	A / H3N2	3C.2a1b.2a.2b	cs	Europe / Belgium	Human	2021-12-07
+EPI4469107	A/Iceland/12454/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	cs	Europe / Iceland	Human	2025-04-17
+EPI2337213	A/Iceland/63589/2022	A / H3N2	3C.2a1b.2a.2a.3b	cs	Europe / Iceland	Human	2022-12-15
+EPI4064063	A/Valladolid/1187/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	cs	Europe / Spain	Human	2025-01-07
+EPI4063745	A/Egypt/48/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	E1	Africa / Egypt	Human	2024-12-03
+EPI2087854	A/Bulgaria/648/2022	A / H3N2	3C.2a1b.2a.2a	SIAT2/SIAT1	Europe / Bulgaria	Human	2022-01-30
+EPI4212996	A/Albania/310561/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	cs	Europe / Albania	Human	2025-01-06
+EPI3102320	A/Kyrgyzstan/122/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	cs	Asia / Kyrgyzstan	Human	2023-12-14
+EPI4518373	A/Panama/274964/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	cs	North America / Panama	Human	2025-05-10
+EPI3540700	A/Orenburg/20/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	MDCK3/SIAT1	Europe / Russian Federation	Human	2024-02-06
+EPI2235443	A/Melilla/3851/2022	A / H3N2	3C.2a1b.2a.2b	cs	Europe / Spain	Human	2022-10-07
+EPI4082803	A/Kosovo/3353/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	cs	Europe / Kosovo	Human	2024-12-24
+EPI1543132	A/Kosovo/1159/2019	A / H3N2	3C.2a1b.2	SIAT1	Europe / Kosovo	Human	2019-04-03
+EPI4063493	A/Togo/1117/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	cs	Africa / Togo	Human	2024-10-07
+EPI4063235	A/Togo/A17/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	cs	Africa / Togo	Human	2024-10-15
+EPI2047133	A/Netherlands/10194/2021	A / H3N2	3C.2a1b.2a.2a.3	MDCK-MIX2/SIAT1	Europe / Netherlands	Human	2021-12-19
+EPI4802880	A/Hong Kong/HKU-251121-006/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K	Original	Asia / Hong Kong (SAR)	Human	2025-10-12
+EPI4931635	A/Ireland/00081573/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Europe / Ireland	Human	2025-10-27
+EPI4833108	A/Ireland/00074779/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Europe / Ireland	Human	2025-10-13
+EPI4801931	A/Ireland/00081276/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Europe / Ireland	Human	2025-11-04
+EPI4801923	A/Ireland/00078849/2025	A / H3	3C.2a1b.2a.2a.3a.1		Europe / Ireland	Human	2025-10-28
+EPI2724954	A/Hong Kong/1629/2023	A / H3	3C.2a1b.2a.2a.3a.1	MDCK	Asia / Hong Kong (SAR)	Human	2023-07-21
+EPI4815180	A/Bangkok/P4302/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Thailand / Bangkok	Human	2025-10-21
+EPI4814901	A/Tak/P4889/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Thailand / Tak	Human	2025-11-07
+EPI4814627	A/Bangkok/s4196w/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Thailand / Bangkok	Human	2025-09-08
+EPI4628056	A/Nakhon Phanom/P2667/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Thailand / Nakhon Phanom	Human	2025-08-18
+EPI4569411	A/Nakhon Phanom/P1846/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Asia / Thailand / Nakhon Phanom	Human	2025-07-01
+EPI3664811	A/Tak/F1323/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Thailand / Tak	Human	2024-08-09
+EPI1641089	A/Denmark/3263/2019	A / H3N2	3C.2a1b.2a	Original	Europe / Denmark	Human	2019-10-12
+EPI3117786	A/Hessen/33/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Germany	Human	2024-02-16
+EPI2842099	A/Berlin/32/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Germany	Human	2023-11-13
+EPI2460049	A/Bremen/65/2022	A / H3N2	3C.2a1b.2a.2b	Original	Europe / Germany	Human	2022-12-19
+EPI2170345	A/Berlin/91/2022	A / H3N2	3C.2a1b.2a.2b	Original	Europe / Germany	Human	2022-05-13
+EPI1440658	A/Baden-Wuerttemberg/295/2019	A / H3N2	3C.2a1b.2	Original	Europe / Germany	Human	2019-04-05
+EPI1378263	A/Baden-Wuerttemberg/90/2019	A / H3N2	3C.2a1b.2b	Original	Europe / Germany	Human	2019-02-06
+EPI4950604	A/Nebraska/USAFSAM-16507/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K	Original	North America / United States / Nebraska	Human	2025-12-16
+EPI4914409	A/North Dakota/USAFSAM-16450/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K	Original	North America / United States / North Dakota	Human	2025-12-08
+EPI4545183	A/United Kingdom/16158/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / United Kingdom / Suffolk	Human	2025-03-07
+EPI4544350	A/Oklahoma/16043/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Oklahoma	Human	2025-02-04
+EPI4516595	A/Texas/15996/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Texas	Human	2025-01-22
+EPI4516132	A/Arizona/15932/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Arizona	Human	2025-01-30
+EPI4515736	A/Kentucky/15878/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Kentucky	Human	2025-01-27
+EPI4096519	A/Texas/15542/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Texas	Human	2024-12-02
+EPI3365716	A/Texas/14940/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Texas	Human	2024-03-11
+EPI2996203	A/Oklahoma/14467/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Oklahoma	Human	2023-12-19
+EPI2995825	A/California/14401/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / California	Human	2024-01-04
+EPI2916549	A/Colorado/14334/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Colorado	Human	2023-12-04
+EPI2799911	A/South Carolina/14261/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / South Carolina	Human	2023-10-03
+EPI2416862	A/North Dakota/14085/2023	A / H3N2	3C.2a1b.2a.2a.1b	Original	North America / United States / North Dakota	Human	2023-01-09
+EPI2289651	A/California/13545/2022	A / H3N2	3C.2a1b.2a.2b	Original	North America / United States / California	Human	2022-11-18
+EPI2109723	A/Washington/13327/2022	A / H3N2	3C.2a1b.2a.2a.1	Original	North America / United States / Washington	Human	2022-05-13
+EPI2109420	A/Texas/13287/2022	A / H3N2	3C.2a1b.2a.2a.3	Original	North America / United States / Texas	Human	2022-04-27
+EPI2090280	A/New York/13016/2022	A / H3N2	3C.2a1b.2a.2a.3a	Original	North America / United States / New York	Human	2022-04-11
+EPI2027158	A/Montana/12638/2022	A / H3N2	3C.2a1b.2a.2a	Original	North America / United States / Montana	Human	2022-03-02
+EPI1925926	A/Maryland/12391/2021	A / H3N2	3C.2a1b.2a.2a.1a	Original	North America / United States / Maryland	Human	2021-10-13
+EPI1654379	A/Washington/9904/2019	A / H3N2	3C.2a1b.2b	Original	North America / United States / Washington	Human	2019-10-04
+EPI4899371	A/Catalonia/NSVH161522923/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Spain / Catalonia / Barcelona	Human	2025-12-10
+EPI3165642	A/Ulaanbaatar/10859/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original Specimen	Asia / Mongolia / Ulaanbaatar Hot	Human	2023-12-07
+EPI1420319	A/Catalonia/0762403S/2019	A / H3N2	3C.2a1b.2	Original	Europe / Spain / Catalonia / Tarragona	Human	2019-02-14
+EPI4793223	A/Finland/844/2025	A / H3N2	3C.2a1b.2a.2a.3a.1		Europe / Finland	Human	2025-09-20
+EPI4555194	A/LaRioja/1742/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	MDCK	Europe / Spain / La Rioja	Human	2025-05-15
+EPI4900056	A/Indonesia/BIOKES-SRKI0484/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Indonesia / Jawa Tengah	Human	2025-10-03
+EPI4899904	A/Indonesia/BIOKES-ES112214171W/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K	Original	Asia / Indonesia / Sumatera Utara	Human	2025-10-01
+EPI4747590	A/Indonesia/BIOKES-I-BT0038/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Indonesia / Kepulauan Riau	Human	2025-06-20
+EPI4747582	A/Indonesia/BIOKES-I-BT0033/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Indonesia / Kepulauan Riau	Human	2025-06-15
+EPI4747534	A/Indonesia/BIOKES-I-SR0054/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Indonesia / DI Yogyakarta	Human	2025-07-01
+EPI4609442	A/Indonesia/BIOKES-IMKS992/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Indonesia / Sulawesi Selatan	Human	2025-06-23
+EPI4609378	A/Indonesia/BIOKES-IBJM336/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Indonesia / Kalimantan Selatan	Human	2025-02-28
+EPI4412255	A/Indonesia/BIOKES-S-RHS789/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Indonesia / Jawa Barat	Human	2025-01-31
+EPI4081441	A/Indonesia/BIOKES-IBPP686/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Indonesia / Kalimantan Selatan	Human	2024-03-27
+EPI4052767	A/Indonesia/BIOKES-I_BDG0867/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Indonesia	Human	2024-03-12
+EPI3566657	A/Indonesia/BIOKES-I-SR0009/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Indonesia / Jawa Tengah	Human	2024-07-06
+EPI2942913	A/Indonesia/BIOKES-ISMG0751/2021	A / H3N2	3C.2a1b.2a.2a	Original	Asia / Indonesia / Jawa Tengah	Human	2021-12-11
+EPI4873137	A/Toronto/ON-SHL-FLUA-00182/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K	Original	North America / Canada / Ontario / Toronto	Human	2025-11
+EPI4387599	A/Riyadh/292/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Saudi Arabia / Riyadh	Human	2025-02-06
+EPI3681420	A/Washington/S27463/2020	A / H3N2	3C.2a1b.2a.1	Original	North America / United States / Washington / Pierce County	Human	2020-02-14
+EPI4630859	A/Hong Kong/EPI1057/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Hong Kong (SAR)	Human	2025-02-24
+EPI4297064	A/Washington/UW-69024/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Washington	Human	2025-01-31
+EPI4651035	A/Michigan/MIS-L386498853/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Michigan	Human	2025-02-20
+EPI4367520	A/Michigan/UM-10063615822/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Michigan	Human	2025-04-21
+EPI4263650	A/Michigan/UM-10062602799/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Michigan	Human	2025-02-26
+EPI4263090	A/Georgia/IVY-G25Y80O1/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Georgia	Human	2025-03-10
+EPI4263002	A/Michigan/UM-10062224214/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Michigan	Human	2025-02-06
+EPI4281259	A/New Jersey/GKISBBBE34392/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / New Jersey	Human	2025-03-04
+EPI4603019	A/Pennsylvania/B24-0009/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Pennsylvania	Human	2025-01-01
+EPI4296709	A/California/LACPHL-INF01673/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / California	Human	2025-01-07
+EPI3664519	A/California/LACPHL-INF00622/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / California	Human	2024-11-10
+EPI2385198	A/Michigan/UOM10045286424/2022	A / H3N2	3C.2a1b.2a.2b	Human	North America / United States / Michigan	Human	2022-04-30
+EPI4772858	A/Ulyanovsk_Oblast/484-2V/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / Russian Federation / Ulyanovsk Oblast	Human	2025-02-25
+EPI4772763	A/Udmurtia/432-2V/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / Russian Federation / Udmurtia	Human	2025-02-10
+EPI3986476	A/Volgograd_Oblast/182-3V/2024	A / H3N2	3C.2a1b.2a.2a.3b	original	Europe / Russian Federation / Volgograd Oblast	Human	2024-12-17
+EPI2860890	A/Yakutia/70-6V/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / Russian Federation / Sakha (Yakutia) Republic	Human	2023-11-06
+EPI4772756	A/Tomsk_Oblast/426-13V/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / Russian Federation / Tomsk Oblast	Human	2025-02-03
+EPI4772450	A/Belgorod_Oblast/337-4V/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / Russian Federation / Belgorod Oblast	Human	2025-01-30
+EPI4881917	A/Netherlands/02394/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Netherlands	Human	2025-12-06
+EPI3394881	A/Netherlands/01595/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Netherlands	Human	2024-04-21
+EPI1988897	A/Netherlands/00083/2022	A / H3N2	3C.2a1b.2a.2a.1	Original	Europe / Netherlands	Human	2022-02-15
+EPI4948662	A/Heilongjiang-Aihui/11189/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	C1+S1	Asia / China / Heilongjiang	Human	2025-12-02
+EPI4948629	A/Hubei-Chongyang/351/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	C1+S1	Asia / China / Hubei	Human	2025-12-01
+EPI4851152	A/Chongqing-Jiulongpo/32/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	E1+E1	Asia / China / Chongqing	Human	2025-09-23
+EPI4851146	A/Sichuan-Gaoxin/1771/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K	C1+S1	Asia / China / Sichuan	Human	2025-09-29
+EPI4851137	A/Hunan-Kaifu/1990/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	C1+S1	Asia / China	Human	2025-09-22
+EPI4851098	A/Shanghai-Fengxian/1849/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	C1+S1	Asia / China / Shanghai	Human	2025-10-13
+EPI4851023	A/Yunnan-Menghai/2534/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	C1+S1	Asia / China / Yunnan	Human	2025-10-13
+EPI4596186	A/Gansu-Xifeng/1285/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	E1+E1	Asia / China / Gansu	Human	2025-05-07
+EPI2082969	A/Myanmar/21M013/2021	A / H3N2	3C.2a1b.2a.2a.3	original	Asia / Myanmar / Yangon Division / East Dagon	Human	2021-11-03
+EPI3902770	A/Thailand/23/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Asia / Thailand	Human	2024-10-23
+EPI1740076	A/Chanthaburi/385/2019	A / H3N2	3C.2a1b.2	"MDCK1, SIAT1"	Asia / Thailand / Chanthaburi	Human	2019-08-19
+EPI1670037	A/Chanthaburi/2377/2019	A / H3N2	3C.2a1b.2b	SIAT1	Asia / Thailand / Chanthaburi	Human	2019-07-01
+EPI2804403	A/South Australia/299/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	MDCK1	Oceania / Australia	Human	2023-10-09
+EPI4644462	A/New Caledonia/63/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Oceania / New Caledonia	Human	2025-03-26
+EPI3539087	A/Cambodia/i0610373/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	"SIAT1, SIAT1"	Asia / Cambodia / Khett Kampot	Human	2024-04-30
+EPI4665016	A/Sri Lanka/21/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Asia / Sri Lanka	Human	2025-03-27
+EPI4665012	A/Sri Lanka/58/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Asia / Sri Lanka	Human	2025-06-13
+EPI3539142	A/Sri Lanka/91/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Asia / Sri Lanka / Matara Gh	Human	2024-08-12
+EPI3007303	A/Sri Lanka/43/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Sri Lanka / Lrh Hospital	Human	2024-01-12
+EPI2397475	A/Sri Lanka/8/2022	A / H3N2	3C.2a1b.2a.2a.3	Original	Asia / Sri Lanka / Colombo 8	Human	2022-10-25
+EPI1985626	A/Sri Lanka/1/2022	A / H3N2	3C.2a1b.2a.2a.3b	Original Specimen	Asia / Sri Lanka / Colombo	Human	2022-01-07
+EPI1584554	A/Sri Lanka/34/2019	A / H3N2	3C.2a1b.2b	SIAT2	Asia / Sri Lanka / Western	Human	2019-07-21
+EPI4202689	A/Perth/1157/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	QMC2	Oceania / Australia / Western Australia	Human	2024-08-13
+EPI4308850	A/Victoria/300/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Oceania / Australia / Victoria	Human	2025-02-19
+EPI2972380	A/Victoria/3064/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Oceania / Australia / Victoria	Human	2023-10-19
+EPI4777590	A/Darwin/1726/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Oceania / Australia / Northern Territory	Human	2025-10-09
+EPI4308974	A/Sydney/75/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Oceania / Australia / New South Wales	Human	2025-03-24
+EPI1671639	A/Sydney/465/2019	A / H3N2	3C.2a1b.2b	SIAT1	Oceania / Australia / New South Wales / Granville	Human	2019-09-07
+EPI4277732	A/Timor-Leste/302/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Oceania / Timor-Leste	Human	2024-02-26
+EPI1882531	A/Timor-Leste/12/2021	A / H3N2	3C.2a1b.2a.1	Original Specimen	Oceania / Timor-Leste	Human	2021-03-11
+EPI4769942	A/Tasmania/821/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Oceania / Australia / Tasmania	Human	2025-09-04
+EPI4769564	A/Tasmania/805/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Oceania / Australia / Tasmania	Human	2025-08-27
+EPI4671984	A/Tasmania/705/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Oceania / Australia / Tasmania	Human	2025-07-25
+EPI4664988	A/Tasmania/729/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Oceania / Australia / Tasmania	Human	2025-07-29
+EPI2686140	A/Victoria/1768/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	MDCK1	Oceania / Australia / Victoria	Human	2023-06-30
+EPI4784896	A/Wairarapa/01/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Oceania / New Zealand	Human	2025-07-28
+EPI4937885	A/Brunei/235/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Asia / Brunei	Human	2025-11-04
+EPI4923067	A/Brunei/162/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT2	Asia / Brunei	Human	2025-10-04
+EPI4607407	A/Brunei/77/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT2	Asia / Brunei	Human	2025-02-03
+EPI4448311	A/Nepal/S854/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Asia / Nepal	Human	2025-03-09
+EPI4514373	A/Victoria/397/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Oceania / Australia / Victoria	Human	2025-03-31
+EPI4664895	A/South_Queensland/19/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	SIAT1	Oceania / Australia	Human	2025-03-19
+EPI4305393	A/YAMAGATA/210/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	MDCK 2 +hCK1	Asia / Japan	Human	2024-12-10
+EPI1882472	A/MIYAGI/2/2021	A / H3N2	3C.2a1b.2a.1	Original	Asia / Japan	Human	2021-03-02
+EPI4726225	A/FUKUSHIMA/17/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	MDCK 3 +hCK1	Asia / Japan	Human	2025-05-07
+EPI4848366	A/TOKYO/EIS13-360/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Japan	Human	2025-07-22
+EPI4848286	A/TOKYO/EIS13-299/2025	A / H3N2	3C.2a1b.2a.2a.3a	Original	Asia / Japan	Human	2025-07-09
+EPI4847849	A/TOKYO/EIS13-323/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Japan	Human	2025-07-10
+EPI4398620	A/TOKYO/EIS11-538/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Japan	Human	2025-01-09
+EPI4224627	A/TOKYO/EIS11-465/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Asia / Japan	Human	2025-01-05
+EPI1383998	A/KANAGAWA/IC18143/2019	A / H3N2	3C.2a1b.2b	Original	Asia / Japan	Human	2019-02-07
+EPI4305297	A/NIIGATA/24/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	CaCo-2 1 +hCK1	Asia / Japan	Human	2025-01-21
+EPI4277984	A/FUKUI/3/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	MDCK 2 +hCK1	Asia / Japan	Human	2025-01-20
+EPI4450545	A/GIFU/6/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	MDCK 1 +hCK1	Asia / Japan	Human	2025-01-07
+EPI4592157	A/SHIGA/13/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	MDCK 2 +hCK1	Asia / Japan	Human	2025-02-25
+EPI4450497	A/OSAKA/19/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	AX-4 2 +hCK1	Asia / Japan	Human	2025-01-23
+EPI1922676	A/Nepal/21FL2141/2021	A / H3N2	3C.2a1b.2a.2a.3	Original	Asia / Nepal	Human	2021-07-26
+EPI4631153	A/South Africa/4751/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	Africa / South Africa	Human	2025-05-26
+EPI2251767	A/Colombia/4612/2022	A / H3N2	3C.2a1b.2a.2b	Original	South America / Colombia	Human	2022-10-10
+EPI4780398	A/Mexico/2998/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	C1	North America / Mexico	Human	2025-04-24
+EPI3955109	A/Mexico/5613/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	C1	North America / Mexico	Human	2024-11-19
+EPI3954808	A/Mexico/5684/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	C1	North America / Mexico	Human	2024-11-25
+EPI4645100	A/Madagascar/1994/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	Africa / Madagascar	Human	2025-05-21
+EPI2619498	A/Abu Dhabi/4513/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	Asia / United Arab Emirates	Human	2023-04-17
+EPI1448355	A/Abu Dhabi/003/2019	A / H3N2	3C.2a1b.2a	Original	Asia / United Arab Emirates	Human	2019-01-02
+EPI2038621	A/Florida/22/2022	A / H3N2	3C.2a1b.2a.2a.3	Original	North America / United States / Florida	Human	2022-02-26
+EPI2007452	A/Utah/13/2022	A / H3N2	3C.2a1b.2a.2a.1	Original	North America / United States / Utah	Human	2022-02-19
+EPI4779191	A/District Of Columbia/40/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / District of Columbia	Human	2025-03-19
+EPI3244558	A/Kenya/118/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	Africa / Kenya	Human	2024-02-02
+EPI1814007	A/Bolivia/436/2020	A / H3N2	3C.2a1b.2	Original	South America / Bolivia	Human	2020-03-09
+EPI4631389	A/Cote D'Ivoire/1866/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	Africa / Cote d'Ivoire	Human	2025-06-19
+EPI2813057	A/British Columbia/RV00920/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	S2	North America / Canada	Human	2023-09-04
+EPI1496130	A/Ontario/RV1084/2019	A / H3N2	3C.2a1b.2	X2	North America / Canada	Human	2019-02-05
+EPI4617043	A/Sao Paulo/358392778-IAL/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	South America / Brazil	Human	2025-06-09
+EPI1842275	A/Bangladesh/1924/2020	A / H3N2	unassigned	Original	Asia / Bangladesh	Human	2020-09-28
+EPI4617004	A/New York/126/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / New York	Human	2025-07-10
+EPI4445096	A/New York/121/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / New York	Human	2025-05-13
+EPI1952557	A/New York/05/2021	A / H3N2	3C.2a1b.2a.2	Original	North America / United States / New York	Human	2021-11-02
+EPI4405097	A/Maine/18/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Maine	Human	2025-04-21
+EPI1548487	A/Maine/26/2019	A / H3N2	3C.2a1b.2b	Original	North America / United States / Maine	Human	2019-07-16
+EPI2283987	A/Idaho/78/2022	A / H3N2	3C.2a1b.2a.2b	Original	North America / United States / Idaho	Human	2022-12-02
+EPI1334401	A/New Hampshire/32/2018	A / H3N2	3C.2a1b.2	Original	North America / United States / New Hampshire	Human	2018-11-25
+EPI4584810	A/Pennsylvania/498/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Pennsylvania	Human	2025-06-08
+EPI4299949	A/Pennsylvania/47/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Pennsylvania	Human	2025-03-16
+EPI3552309	A/Pennsylvania/248/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Pennsylvania	Human	2024-08-01
+EPI4391896	A/Kentucky/60/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Kentucky	Human	2025-04-13
+EPI3575516	A/Kentucky/38/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Kentucky	Human	2024-08-19
+EPI4277331	A/Massachusetts/49/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Massachusetts	Human	2025-03-14
+EPI4277283	A/Massachusetts/45/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Massachusetts	Human	2025-03-08
+EPI3943980	A/Massachusetts/ISC-1244/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Massachusetts	Human	2024-12-18
+EPI2990237	A/Massachusetts/54/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Massachusetts	Human	2023-11-18
+EPI2226131	A/Missouri/19/2022	A / H3N2	3C.2a1b.2a.2a.3a	Original	North America / United States / Missouri	Human	2022-10-16
+EPI1926410	A/Michigan/06/2021	A / H3N2	3C.2a1b.2a.2c	Original	North America / United States / Michigan	Human	2021-10-12
+EPI4404956	A/Arkansas/58/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Arkansas	Human	2025-04-22
+EPI3016182	A/Arkansas/15/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Arkansas	Human	2023-12-28
+EPI3634198	A/Tennessee/71/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Tennessee	Human	2024-09-23
+EPI4221286	A/New York/43/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / New York	Human	2025-01-25
+EPI3133529	A/Oklahoma/05/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Oklahoma	Human	2024-02-08
+EPI4276852	A/Nebraska/56/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Nebraska	Human	2025-03-18
+EPI2016078	A/Nebraska/10/2022	A / H3N2	3C.2a1b.2a.2a.1a	Original	North America / United States / Nebraska	Human	2022-03-01
+EPI1916958	A/Nebraska/01/2021	A / H3N2	3C.2a1b.2a.2a	Original	North America / United States / Nebraska	Human	2021-08-17
+EPI2716283	A/Hawaii/32/2023	A / H3N2	3C.2a1b.2a.2a.3	OR_IR	North America / United States / Hawaii	Human	2023-07-23
+EPI2040406	A/California/44/2022	A / H3N2	3C.2a1b.2a.2	Original	North America / United States / California	Human	2022-03-16
+EPI1617825	A/California/171/2019	A / H3N2	3C.2a1b.2a	Original	North America / United States / California	Human	2019-10-03
+EPI4391906	A/Virginia/55/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Virginia	Human	2025-04-04
+EPI4792616	A/Washington/167/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Washington	Human	2025-10-09
+EPI2535236	A/Washington/25/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	North America / United States / Washington	Human	2023-03-08
+EPI4300406	A/Illinois/51/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Illinois	Human	2025-03-18
+EPI3127394	A/Minnesota/15/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	North America / United States / Minnesota	Human	2024-02-11
+EPI2210164	A/Minnesota/37/2022	A / H3N2	3C.2a1b.2a.2a	Original	North America / United States / Minnesota	Human	2022-09-11
+EPI3670744	A/Bahrain/7275/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	Asia / Bahrain	Human	2024-09-27
+EPI2372595	A/Togo/1505/2022	A / H3N2	3C.2a1b.2a.2a.3a	Original	Africa / Togo	Human	2022-07-24
+EPI1316558	A/Maldives/808/2018	A / H3N2	3C.2a1b.2	Original	Asia / Maldives	Human	2018-05-29
+EPI4856930	A/Ethiopia/5036/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	Africa / Ethiopia	Human	2025-02-12
+EPI1969508	A/Ethiopia/1016/2021	A / H3N2	3C.2a1b.2a	Original	Africa / Ethiopia	Human	2021-03-21
+EPI2900705	A/Bangladesh/3026/2023	A / H3N2	3C.2a1b.2a.2a.3b	OR_IR	Asia / Bangladesh	Human	2023-07-15
+EPI1427917	A/Bangladesh/3011/2018	A / H3N2	3C.2a1b.2	Original	Asia / Bangladesh	Human	2018-10-14
+EPI2226757	A/Niger/1714/2022	A / H3N2	3C.2a1b.2a.2a.3a	Original	Africa / Niger	Human	2022-09-22
+EPI4752658	A/Bhutan/3502/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	OR_IR	Asia / Bhutan	Human	2025-07-24
+EPI4600892	A/Ghana/3354/2025	A / H3N2	3C.2a1b.2a.2a.3a	OR_IR	Africa / Ghana	Human	2025-06-01
+EPI3518155	A/Nigeria/0080/2024	A / H3N2	3C.2a1b.2a.2a.3b	OR_IR	Africa / Nigeria	Human	2024-05-03
+EPI4795951	A/Singapore/MAH0373/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	clinical specimen	Asia / Singapore	Human	2025-09-16
+EPI4794128	A/Singapore/GP10784/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	clinical specimen	Asia / Singapore	Human	2025-08-18
+EPI4793842	A/Singapore/NUH0732/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	clinical specimen	Asia / Singapore	Human	2025-07-11
+EPI4793542	A/Singapore/GP9108/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	clinical specimen	Asia / Singapore	Human	2025-07-02
+EPI3460895	A/Singapore/KK0180/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	clinical specimen	Asia / Singapore	Human	2024-01-15
+EPI3456948	A/Singapore/SAR0839/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	clinical specimen	Asia / Singapore	Human	2024-01-29
+EPI2965828	A/Singapore/GP18022/2023	A / H3N2	3C.2a1b.2a.2a.3a.1	clinical specimen	Asia / Singapore	Human	2023-11-14
+EPI2292195	A/Singapore/NUH0048/2022	A / H3N2	3C.2a1b.2a.2a	Clinical specimen	Asia / Singapore	Human	2022-10-05
+EPI4853452	A/Minas Gerais/5536/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado de Minas Gerais / Alfenas	Human	2025-10-12
+EPI4584770	A/Minas Gerais/1591/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado de Minas Gerais / Belo Horizonte	Human	2024-12-04
+EPI4853593	A/Rio de Janeiro/5767/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado do Rio de Janeiro / Rio de Janeiro	Human	2025-11-23
+EPI4776183	A/Rio de Janeiro/5223/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado do Rio de Janeiro / Rio de Janeiro	Human	2025-09-25
+EPI4660412	A/Rio de Janeiro/1953/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado do Rio de Janeiro / Rio de Janeiro	Human	2025-04-01
+EPI4635828	A/Rio de Janeiro/3057/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado do Rio de Janeiro / Rio De Janeiro	Human	2025-06-12
+EPI4240435	A/Rio de Janeiro/532/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado do Rio de Janeiro / Nova Friburgo	Human	2025-02-03
+EPI4767569	A/Parana/4797/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado do Parana / Santo Antonio da Platina	Human	2025-07-09
+EPI2217614	A/Santa Catarina/21659/2022	A / H3N2	3C.2a1b.2a.2a.3	Original	South America / Brazil / Estado de Santa Catarina / Sao jose	Human	2022-09-16
+EPI4661698	A/Bahia/2379/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado da Bahia / Santo Antonio de Jesus	Human	2025-06-04
+EPI4661798	A/Espirito Santo/3503/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Estado de Espirito Santo / Serra / Patient from South America	Human	2025-07-22
+EPI4852954	A/Distrito Federal/5837/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	South America / Brazil / Distrito Federal / Santa Maria	Human	2025-10-20
+EPI3441125	A/France/IDF-IPP06119/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / France / Region Ile-de-France	Human	2024-05-24
+EPI4911923	A/Chita/RII-MH269579S/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K	original	Europe / Russian Federation / Zabaykalsky Krai / Chita	Human	2025-12-10
+EPI4903536	A/Saint-Petersburg/RII-MH268183S/2025	A / H3N2	3C.2a1b.2a.2a.3a.1 / K	original	Europe / Russian Federation / Saint-Petersburg	Human	2025-12-12
+EPI4634154	A/Ivanovo/RII-MH249491S/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / Russian Federation / Ivanovo Oblast / Ivanovo	Human	2025-04-01
+EPI4427473	A/Krasnodar/RII-MH237561S/2025	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / Russian Federation / Krasnodar Krai / Krasnodar	Human	2025-01-13
+EPI3845542	A/Vladimir/RII-MH223409S/2024	A / H3N2	3C.2a1b.2a.2a.3a.1	original	Europe / Russian Federation / Vladimir Region	Human	2025-01-10
+EPI2260882	A/Saint-Petersburg/RII-3634S/2022	A / H3N2	3C.2a1b.2a.2a.3a.1	Original	Europe / Russian Federation / Saint Petersburg	Human	2022-11-22

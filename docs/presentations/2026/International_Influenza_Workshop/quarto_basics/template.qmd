@@ -1,0 +1,70 @@
+---
+title: test
+author:
+  - name: "Jane Doe"
+    email: jane@example.com
+    
+date: today
+
+format:
+  html:
+    embed-resources: true
+
+execute:
+  echo: false
+  warning: false
+  error: false
+---
+
+```{python}
+import pandas as pd
+from pathlib import Path
+import src.report.main as mn
+import src.report.map as mp
+import src.report.timeline as tl
+import src.report.tree as tr
+```
+
+```{python}
+summary_file = Path('gisaid_epiflu_isolates.txt')
+df = mn.read_csv(summary_file)
+df = mn.format_data(df)
+
+cols = ['Sample', 'Clade', 'Location', 'Collection_Date']
+df_sm = df[cols]
+```
+
+## Executive Summary
+
+```{python}
+n_samples   = len(df)
+clade       = df['Clade'].unique()
+dates       = df["date"]
+
+min_date = dates.min()
+max_date = dates.max()
+```
+
+This report includes `{python} n_samples` samples beloning to `{python} clade.size` clades collected between `{python} f"{min_date:%B %d, %Y} and {max_date:%B %d, %Y}"`.
+
+<!-- Insert additional summary text below -->
+
+## Sample Summary
+
+```{python}
+fig = tl.plot_timeline(df)
+fig
+```
+
+```{python}
+fig = mp.plot_map(df)
+fig
+```
+
+## Tree
+
+```{python}
+tree_file = Path(f"tree.nwk")
+fig = tr.plot_tree(tree_file, tip_color_attr='Clade')
+fig
+```
